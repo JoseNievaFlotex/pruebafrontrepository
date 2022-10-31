@@ -10,6 +10,20 @@ import { NavDropdown } from "react-bootstrap";
 const NavBarExample = () => {
   return (
     <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Nav className="me-auto"></Nav>
+            <Nav>
+              <Nav.Link as={Link} to="/intranet">
+                FLOTEXNET
+              </Nav.Link>
+              <Image src="/img/lock.png" className="lock" />
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Navbar collapseOnSelect expand="lg" bg="light">
         <Container>
           <Navbar.Brand as={Link} to="/">

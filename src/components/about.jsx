@@ -7,22 +7,74 @@ import React from "react";
 
 const About = (props) => {
   return (
-    <Row >
-      <Image
+    <>
+      <Row>
+        <Image
           className="d-block w-100"
           src="/img/banner-1.png"
           alt="First slide"
         />
-        <Container className="col-sm-8">
-     <h1 className="m-5 text-center display-1"> FLOTEX</h1>
-     <span className="m-3 text-center">
-     O Grupo, composto pelas empresas Adar, Artec e Texliving, atua em diferentes segmentos do mercado têxtil sendo hoje um dos maiores e mais completos do Brasil. Cada marca possui as características necessárias para atender cada mercado de forma personalizada. Juntos, o grupo oferece produtos de alta qualidade, importados e nacionais, que atendem tanto o mercado da moda, quanto o da decoração.
-
-Uma equipe treinada de representantes atende clientes em todo território nacional, oferecendo o melhor mix de produtos para cada região.
-     </span>
-
+        <Container className="col-sm-8 p-5" >
+          <h1 className="m-5 text-center display-1"> FLOTEX</h1>
+          <span className=" m-3 text-center">
+            O Grupo, composto pelas empresas Adar, Artec e Texliving, atua em
+            diferentes segmentos do mercado têxtil sendo hoje um dos maiores e
+            ma is completos do Brasil. Cada marca possui as características
+            necessárias para atender cada mercado de forma personalizada.
+            Juntos, o grupo oferece produtos de alta qualidade, importados e
+            nacionais, que atendem tanto o mercado da moda, quanto o da
+            decoração. Uma equipe treinada de representantes atende clientes em
+            todo território nacional, oferecendo o melhor mix de p rodutos para
+            cada região.
+          </span>
+          
         </Container>
-    </Row>
+
+        <Container className="d-flex justify-content-center ">
+        <Row className=" p-5">
+        <iframe 
+        style={{width: "1000px", height: "500px"}}
+        src="https://www.youtube.com/embed/AMq5nSObmtU" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </Row>
+        </Container>
+        {''}
+        <Container className=" bg-dark text-light fluid" >
+          <h1 className="m-5 text-center display-1"> IMPORTACIONES</h1>
+          <Row  className="banner">
+          <Col >
+          <Image className="logoempresa"  
+           src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png"/>
+          <h5 className="text-center p-5"> Importadora Têxtil
+Tecidos planos e malhas
+Moda feminina, masculina, home e pet</h5>
+          </Col>
+          <Col >
+          <Image className="logoempresa"  
+           src="https://i.pinimg.com/originals/f0/dd/ec/f0ddec76cda8ee2756e663924856f81e.png"/>
+          <h5 className="text-center p-5"> Indústria Nacional
+Malharia, Estamparia, Tinturaria
+Moda feminina e masculina </h5>
+          </Col>
+          <Col >
+          <Image className="logoempresa"  
+           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wikimedia-logo.png/480px-Wikimedia-logo.png"/>
+          <h5 className="text-center p-5"> Importadora Têxtil
+Tecidos planos e malha
+Decoração (móveis/colchões) e calçados</h5>
+          </Col>
+
+          </Row>
+        </Container>
+      </Row>
+      <Row className="banner">
+        
+               
+      </Row>
+    </>
   );
 };
-export default About
+export default About;

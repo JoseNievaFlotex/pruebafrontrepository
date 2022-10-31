@@ -1,6 +1,7 @@
 
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import './estilo.css';
+import './estyle.scss';
 //importamos los comp creados
 import About from './components/about';
 import Contact from './components/contact';
