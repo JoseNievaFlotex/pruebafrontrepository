@@ -26,7 +26,7 @@ const Home = () => {
         <Carousel.Caption>
           
           <h1 className="display-1">Flotex</h1>
-          <h2 className="">Calidad e Innovación Textíl</h2>
+          <h2 className="">Calidad e Innovación Textil</h2>
     
       </Carousel.Caption>
       </Carousel.Item>
