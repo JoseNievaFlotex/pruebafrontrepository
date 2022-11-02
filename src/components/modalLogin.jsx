@@ -23,7 +23,7 @@ function modalLogin  ({show, onHide})  {
           <Container>
               <Row>
                   <Col>
-                      <Modal show={show} onHide={onHide} closeButton>
+                      <Modal show={show} onHide={onHide} >
                           <Modal.Header closeButton className='border-0'>
 
                           </Modal.Header>

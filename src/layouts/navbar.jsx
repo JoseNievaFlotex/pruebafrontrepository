@@ -8,8 +8,13 @@ import { Outlet, Link } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
 import ModalLogin from "../components/modalLogin"
 
+import Footer from "./footer";
+
+
 const NavBarExample = () => {
     const[modalLoginShow, setModalLoginShow] = useState(false);
+    const normalLink = "";
+    
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -19,7 +24,7 @@ const NavBarExample = () => {
             <Nav className="me-auto"></Nav>
             <Nav>
               <Nav.Link as={Link} to="/intranet">
-                FLOTEXNET
+                Intranet
               </Nav.Link>
               <Image src="/img/lock.png" className="lock" />
             </Nav>
@@ -42,15 +47,11 @@ const NavBarExample = () => {
               <Nav.Link as={Link} to="/about">
                 Nosotros
               </Nav.Link>
-              <Nav.Link as={Link} to="/service">
-                Servicios
-              </Nav.Link>
-              <Nav.Link as={Link} to="/gallery">
+              
+              <Nav.Link as={Link} to="/gallery" >
                 Galleria
               </Nav.Link>
-              <Nav.Link as={Link} to="/testimonial">
-                Testimonios
-              </Nav.Link>
+              
               <Nav.Link as={Link} to="/team">
                 Equipo
               </Nav.Link>
@@ -63,10 +64,10 @@ const NavBarExample = () => {
             </Nav>
             <Nav>
               <NavDropdown title="Iniciar Sesión" id="collasible-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/" onClick={()=> setModalLoginShow(true)}>
+                <NavDropdown.Item as={Link} to="" onClick={()=> setModalLoginShow(true)}>
                   Logearse
                 </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="/">
+                <NavDropdown.Item as={Link} to="">
                   Registrarse
                 </NavDropdown.Item>
               </NavDropdown>
@@ -78,9 +79,14 @@ const NavBarExample = () => {
       <section>
         <Outlet></Outlet>
       </section>
+
       <ModalLogin 
       show={modalLoginShow} onHide={() => setModalLoginShow(false)}
       />
+
+
+      <Footer />
+
     </>
   );
 };

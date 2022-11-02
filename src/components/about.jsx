@@ -1,19 +1,18 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Nav from "react-bootstrap/Nav";
-import { Image } from "react-bootstrap";
+import Image  from "react-bootstrap/Image";
 import React from "react";
 
-const About = (props) => {
+const About = () => {
   return (
     <>
-      <Row>
-        <Image
-          className="d-block w-100"
-          src="/img/banner-1.png"
-          alt="First slide"
-        />
+      <Row className="exposicion">
+        <video src="https:\/\/adar.com.br\/wp-content\/uploads\/2020\/01\/Grupo-Adar_2.mp4" 
+        autoPlay={true} muted={true} loop={true}
+        poster="/img/banner-1.png">
+        </video>
+       
         <Container className="col-sm-8 p-5" >
           <h1 className="m-5 text-center display-1"> FLOTEX</h1>
           <span className=" m-3 text-center">
@@ -31,38 +30,38 @@ const About = (props) => {
         </Container>
 
         <Container className="d-flex justify-content-center ">
-        <Row className=" p-5">
+        <Row className="p-2">
         <iframe 
         style={{width: "1000px", height: "500px"}}
         src="https://www.youtube.com/embed/AMq5nSObmtU" 
         title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
 
         </Row>
         </Container>
         {''}
-        <Container className=" bg-dark text-light fluid" >
-          <h1 className="m-5 text-center display-1"> IMPORTACIONES</h1>
+        <Container className=" bg-dark text-light fluid col-sm-10" >
+          <h1 className="m-5 text-center "> IMPORTACIONES</h1>
           <Row  className="banner">
           <Col >
           <Image className="logoempresa"  
            src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png"/>
-          <h5 className="text-center p-5"> Importadora Têxtil
+          <h5 className="text-center p-3"> Importadora Têxtil
 Tecidos planos e malhas
 Moda feminina, masculina, home e pet</h5>
           </Col>
           <Col >
           <Image className="logoempresa"  
            src="https://i.pinimg.com/originals/f0/dd/ec/f0ddec76cda8ee2756e663924856f81e.png"/>
-          <h5 className="text-center p-5"> Indústria Nacional
+          <h5 className="text-center p-3"> Indústria Nacional
 Malharia, Estamparia, Tinturaria
 Moda feminina e masculina </h5>
           </Col>
           <Col >
           <Image className="logoempresa"  
            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wikimedia-logo.png/480px-Wikimedia-logo.png"/>
-          <h5 className="text-center p-5"> Importadora Têxtil
+          <h5 className="text-center p-3"> Importadora Têxtil
 Tecidos planos e malha
 Decoração (móveis/colchões) e calçados</h5>
           </Col>

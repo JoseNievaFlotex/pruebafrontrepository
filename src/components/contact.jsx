@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import React from "react";
 import Factura from "./factura"
 import ModalLogin from "./modalLogin"
-
+import Demo6 from './demo6'
 
  const Contact = () => {
 
@@ -18,6 +18,9 @@ import ModalLogin from "./modalLogin"
 
         </Factura>
         <ModalLogin></ModalLogin>
+
+        <Demo6></Demo6>
+        
       </div>
     </div>
   );
