@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
@@ -6,8 +6,10 @@ import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
+import ModalLogin from "../components/modalLogin"
 
 const NavBarExample = () => {
+    const[modalLoginShow, setModalLoginShow] = useState(false);
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -61,7 +63,7 @@ const NavBarExample = () => {
             </Nav>
             <Nav>
               <NavDropdown title="Iniciar Sesión" id="collasible-nav-dropdown">
-                <NavDropdown.Item as={Link} to="/">
+                <NavDropdown.Item as={Link} to="/" onClick={()=> setModalLoginShow(true)}>
                   Logearse
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/">
@@ -76,6 +78,9 @@ const NavBarExample = () => {
       <section>
         <Outlet></Outlet>
       </section>
+      <ModalLogin 
+      show={modalLoginShow} onHide={() => setModalLoginShow(false)}
+      />
     </>
   );
 };

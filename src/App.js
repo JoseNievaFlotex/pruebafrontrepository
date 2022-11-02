@@ -12,7 +12,8 @@ import Gallery from './components/gallery';
 import Team from './components/Team';
 import Testimonial from './components/testimonials';
 import Features from './components/features';
-
+import Register from './components/register';
+import Login from './components/login';
 function App() {
   return (
     <div className="App">
@@ -28,11 +29,10 @@ function App() {
     <Route path='testimonial' element={ <Testimonial /> } />
     <Route path='team' element={ <Team /> } />
     <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='*' element={ <Navigate replace to="/"/> }/>
+
+    
+    
+    
   </Route>
 </Routes> 
 </BrowserRouter>
