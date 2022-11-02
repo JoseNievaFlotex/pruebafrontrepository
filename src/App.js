@@ -12,6 +12,7 @@ import Gallery from './components/gallery';
 import Team from './components/Team';
 import Testimonial from './components/testimonials';
 import Features from './components/features';
+import Login from './layouts/Auth/Intranet/Login';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
     <Route path='contact' element={ <Contact /> } />
     <Route path='contact' element={ <Contact /> } />
     <Route path='contact' element={ <Contact /> } />
+    <Route path='intranet' element={<Login />} />
     <Route path='*' element={ <Navigate replace to="/"/> }/>
   </Route>
 </Routes> 
