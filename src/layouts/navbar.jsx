@@ -6,6 +6,7 @@ import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link } from "react-router-dom";
 import { NavDropdown } from "react-bootstrap";
+import Footer from "./footer";
 
 const NavBarExample = () => {
   return (
@@ -17,7 +18,7 @@ const NavBarExample = () => {
             <Nav className="me-auto"></Nav>
             <Nav>
               <Nav.Link as={Link} to="/intranet">
-                FLOTEXNET
+                Intranet
               </Nav.Link>
               <Image src="/img/lock.png" className="lock" />
             </Nav>
@@ -76,6 +77,8 @@ const NavBarExample = () => {
       <section>
         <Outlet></Outlet>
       </section>
+
+      <Footer />
     </>
   );
 };
