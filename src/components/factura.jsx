@@ -5,6 +5,8 @@ import React from "react";
 import Button  from "react-bootstrap/Button";
 import Form  from "react-bootstrap/Form";
 
+import Iframe from 'react-iframe'
+
 const factura = ()  => {
     return(
         <Container>
@@ -117,6 +119,16 @@ const factura = ()  => {
                 </Form.Group>
                 </Form>
             </Col>
+        </Row>
+        <Row>
+            
+            <Iframe url="https://facturacion.grupotsiperu.com.pe:8445/grupotsi-web/consultas"
+        width="100%"
+        height=""
+        id=""
+        className="vh-100"
+        display="block"
+        position="relative"/>
         </Row>
       </Container>
     );

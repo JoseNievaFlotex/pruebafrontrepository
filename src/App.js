@@ -10,6 +10,7 @@ import NavBarExample from './layouts/navbar';
 import Gallery from './components/gallery';
 import Team from './components/Team';
 import Features from './components/features';
+import Consulta from './components/consulta';
 
 import IntranetLogin from './layouts/Auth/Intranet/IntranetLogin';
 
@@ -28,6 +29,8 @@ function App() {
 
     <Route path='team' element={ <Team /> } />
     <Route path='contact' element={ <Contact /> } />
+
+    <Route path='consulta' element={ <Consulta /> } />
 
     <Route path='intranet' element={<IntranetLogin />} />
     <Route path='*' element={ <Navigate replace to="/"/> }/>

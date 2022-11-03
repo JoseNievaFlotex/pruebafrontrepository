@@ -487,3 +487,10 @@ p {
       background: #FA6742;
       border-color: #FA6742; }
 
+
+
+@media(max-width: 600px) {
+  #iframe-flotex-responsive{
+    height: 1188px !important;
+  }
+}

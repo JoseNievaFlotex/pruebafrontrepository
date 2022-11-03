@@ -14,7 +14,7 @@ import Footer from "./footer";
 const NavBarExample = () => {
     const[modalLoginShow, setModalLoginShow] = useState(false);
     const normalLink = "";
-    
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -58,7 +58,7 @@ const NavBarExample = () => {
               <Nav.Link as={Link} to="/contact">
                 Contacto
               </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
+              <Nav.Link as={Link} to="/consulta">
                 Consulta
               </Nav.Link>
             </Nav>
