@@ -3,19 +3,19 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-const Login = () => {
+const IntranetLogin = () => {
   return (
     <>
       <Container className="container-fluid ps-md-0">
         <Row>
-          <div class="row g-0">
-            <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-            <div class="col-md-8 col-lg-6">
-              <div class="login d-flex align-items-center py-5">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-md-9 col-lg-8 mx-auto">
-                      <h3 class="login-heading mb-4">Bienvenido!</h3>
+          <div className="row g-0">
+            <div className="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+            <div className="col-md-8 col-lg-6">
+              <div className="login d-flex align-items-center py-5">
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-9 col-lg-8 mx-auto">
+                      <h3 className="login-heading mb-4">Bienvenido!</h3>
 
                       <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -56,4 +56,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default IntranetLogin;

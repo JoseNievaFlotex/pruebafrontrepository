@@ -7,12 +7,13 @@ import About from './components/about';
 import Contact from './components/contact';
 import Home from './components/home';
 import NavBarExample from './layouts/navbar';
-import Service from './components/services';
 import Gallery from './components/gallery';
 import Team from './components/Team';
-import Testimonial from './components/testimonials';
 import Features from './components/features';
-import Login from './layouts/Auth/Intranet/Login';
+import Consulta from './components/consulta';
+
+import IntranetLogin from './layouts/Auth/Intranet/IntranetLogin';
+
 
 function App() {
   
@@ -25,17 +26,16 @@ function App() {
     <Route index element={ <Home /> } />
     <Route path='feature' element={ <Features /> } />
     <Route path='about' element={ <About /> } />
-    <Route path='service' element={ <Service /> } />
     <Route path='gallery' element={ <Gallery /> } />
-    <Route path='testimonial' element={ <Testimonial /> } />
+
     <Route path='team' element={ <Team /> } />
     <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='contact' element={ <Contact /> } />
-    <Route path='intranet' element={<Login />} />
+
+    <Route path='consulta' element={ <Consulta /> } />
+
+    <Route path='intranet' element={<IntranetLogin />} />
     <Route path='*' element={ <Navigate replace to="/"/> }/>
+
   </Route>
 </Routes> 
 </BrowserRouter>
