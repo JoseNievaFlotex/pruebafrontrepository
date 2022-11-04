@@ -487,10 +487,91 @@ p {
       background: #FA6742;
       border-color: #FA6742; }
 
+#nav-a-flotex{
+  position: relative;
+  color: rgba(0,0,0,.55);
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
 
+.bg-nav-flotex{
+  background-color: transparent;
+  color: black;  
+}
+.bg-nav-flotex::after{
+  content: " ";
+  background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
 
+  width: 95px !important;
+  position: absolute;
+  height: 2px;
+  top: 44px;
+  right: 0px;
+}
+
+/** Probando efectos**/
+.menu-navbar-flotex a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
+  z-index: 1;
+  transform: scaleX(0);
+  
+  transition: transform 0.5s ease-in-out;
+  transform-origin: center;
+}
+
+.menu-navbar-flotex a:hover::before {
+  transform: scaleX(1);
+}
+.ayrton1234 .styles-module_chatHeader__gaeOA{
+  background-color: #25d366;
+}
+/**FIN PROBANDO EFECTOS**/
+
+.bg-showroom-flotex{
+  background-color: #e2e2e2;
+}
+
+.img-flotex-galery{
+  /* //background-image: url('https://adar.com.br/wp-content/uploads/2019/10/Adar-Bom-Retiro-7643.jpg'); */
+  transition: 0.5s;
+  
+  transition: 0.5s;
+  width: 1s;
+  height: 1s;
+  transform: 2s;
+  
+  width: 100%;
+  height: 100%;
+  background-color: gold;
+
+}
+.showroom-text{
+  color: #c1c1c1;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.img-flotex-galery:hover {
+  /* display: none; */
+  transform: scale(1.2);
+  background-color: bisque;
+}
 @media(max-width: 600px) {
   #iframe-flotex-responsive{
     height: 1188px !important;
+  }
+  .img-flotex-galery:hover {
+    /* display: none; */
+    transform: none;
+
   }
 }

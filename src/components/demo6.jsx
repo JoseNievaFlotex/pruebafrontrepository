@@ -61,25 +61,29 @@ function ValorDolar(props){
     
     useEffect(()=> {
         //axios.get("https://jsonplaceholder.typicode.com/posts")
-        axios.get("https://pruebaservice.vercel.app/api/User")
+        axios.get("https://herokuservicerestapi.herokuapp.com/user")
+        //axios.get("https://pruebaservice.vercel.app/api/User")
         //axios.get("https://mindicador.cl/api/dolar")
             .then(res=>{
-                const data = res.data;
-                setValores(data[0]);
-                console.log((data[0] ?? []).length);
+                const data = res.data.data;
+                setValores(data);
+                console.log(data);
+                
+                
+                //console.log((data[0] ?? []).length);
             })
-            .then(res=>{
-                console.log((res ?? []).lenght>0);
-                if((res ?? []).lenght>0){
-                    var respuesta= res[0];
-                    cookies.set('idUsuario', respuesta.idUsuario, {path: '/'});
-                    cookies.set('nombre_usuario', respuesta.nombre_usuario, {path: '/'});
-                    cookies.set('tipo_usuario', respuesta.tipo_usuario, {path: '/'});
-                    //alert(`Bienvenido ${respuesta.idUsuario} ${respuesta.tipo_usuario}`)
-                }else{
-                    //alert('El Usuario o la contraseña no son correctos');
-                }
-            })
+            // .then(res=>{
+            //     console.log((res ?? []).lenght>0);
+            //     if((res ?? []).lenght>0){
+            //         var respuesta= res[0];
+            //         cookies.set('idUsuario', respuesta.idUsuario, {path: '/'});
+            //         cookies.set('nombre_usuario', respuesta.nombre_usuario, {path: '/'});
+            //         cookies.set('tipo_usuario', respuesta.tipo_usuario, {path: '/'});
+            //         //alert(`Bienvenido ${respuesta.idUsuario} ${respuesta.tipo_usuario}`)
+            //     }else{
+            //         //alert('El Usuario o la contraseña no son correctos');
+            //     }
+            // })
             .catch(error =>{
                 console.log(error);
             })
@@ -89,7 +93,7 @@ function ValorDolar(props){
     <Container>
         <Row>
             <div>
-                {valores.map((v) => <ListGroup.Item key={v.idUsuario}><b>Valor: </b> {v.nombre_usuario} {v.tipo_usuario} </ListGroup.Item>)}
+                {Array.from(valores)?.map((v) => <ListGroup.Item key={v.id}><b>Valor: </b> {v.email} {v.name} </ListGroup.Item>)}
             </div>
         </Row>
       <Row>

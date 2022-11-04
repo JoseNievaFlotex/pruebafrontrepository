@@ -11,6 +11,7 @@ import { Button, Form } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
  const Contact = () => {
 
 
@@ -69,8 +70,13 @@ import FloatingLabel from 'react-bootstrap/FloatingLabel';
                 </div>
               </Form>
             </div>
+            <div>
+            <FloatingWhatsApp  accountName="Flotex" chatMessage="Hola te saluda Flotex 😊
+en que podemos ayudarte" placeholder="Escribe un mensaje" avatar="/img/Icono-circular.png" className="ayrton1234"/>
+            </div>
           </div>
         </div>
+        
         
       </div>
     </div>
