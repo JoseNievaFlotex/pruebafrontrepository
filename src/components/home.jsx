@@ -56,38 +56,34 @@ const Home = () => {
           <h3 className="tejido"> TU UNIVERSO EN TELAS</h3>
         </Row>
       </Container>
-        <h2 className="text-center m-4">PROMOCIONES</h2>
+      <h2 className="text-center m-4">PROMOCIONES</h2>
       <Container className="galleria col-sm-8 col-md-8 col-lg-8">
         <Row className="col-sm-4 p-1">
-          <Image src="/img/Ribest2.png" className="efecto"/>
-          
+          <Image src="/img/Ribest2.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
           <Image src="/img/cataniace1.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
-          <Image src="/img/linoest1.png" className="efecto"/>
+          <Image src="/img/linoest1.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
-          <Image src="/img/chalisest2.png" className="efecto"/>
+          <Image src="/img/chalisest2.png" className="efecto" />
         </Row>
-        
       </Container>
       <Container className="galleria col-sm-8 col-md-8 col-lg-8">
         <Row className="col-sm-4 p-1">
-          <Image src="/img/chambrayest1.png" className="efecto"/>
-          
+          <Image src="/img/chambrayest1.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
-          <Image src="/img/interlock1.png" className="efecto"/>
+          <Image src="/img/interlock1.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
-          <Image src="/img/loma2.png" className="efecto"/>
+          <Image src="/img/loma2.png" className="efecto" />
         </Row>
         <Row className="col-sm-4 p-1">
-          <Image src="/img/chambrayest2.png" className="efecto"/>
+          <Image src="/img/chambrayest2.png" className="efecto" />
         </Row>
-        
       </Container>
     </>
   );

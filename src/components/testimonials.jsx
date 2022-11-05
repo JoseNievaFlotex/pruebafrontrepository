@@ -1,6 +1,6 @@
 import React from "react";
 
-const Testimonials = (props) => {
+const Testimonials = () => {
   return (
     <div id="testimonials">
       <div className="container">

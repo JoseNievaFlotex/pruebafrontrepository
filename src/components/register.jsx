@@ -1,5 +1,5 @@
-import React from 'react'
-import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+import React from "react";
+import { Button, Col, Container, Form, Row } from "react-bootstrap";
 
 export default function register() {
   return (
@@ -33,5 +33,5 @@ export default function register() {
           </Col>
       </Row>
     </Container>
-  )
+  );
 }

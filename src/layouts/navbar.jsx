@@ -5,28 +5,27 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { NavDropdown } from "react-bootstrap";
-import ModalLogin from "../components/modalLogin"
+import { Col } from "react-bootstrap";
+import ModalLogin from "../components/modalLogin";
 
+import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Footer from "./footer";
 
-
 const NavBarExample = () => {
-    const[modalLoginShow, setModalLoginShow] = useState(false);
-    const normalLink = {
-      color: "red"
-    };
-
+  const [modalLoginShow, setModalLoginShow] = useState(false);
+  const normalLink = {
+    color: "red",
+  };
 
   return (
     <>
-      <Navbar bg="dark" variant="dark" >
+      <Navbar bg="dark" variant="dark">
         <Container className="menu-navbar-flotex ">
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Nav className="me-auto"></Nav>
             <Nav>
-              <Nav.Link  as={Link} to="/intranet">
+              <Nav.Link as={Link} to="/intranet">
                 Intranet
               </Nav.Link>
               <Image src="/img/lock.png" className="lock" />
@@ -44,43 +43,82 @@ const NavBarExample = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav ">
             <Nav className="me-auto">
-              <NavLink id="nav-a-flotex" as={Link} to="/" className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Home
               </NavLink>
-              <NavLink id="nav-a-flotex" as={Link} to="/about" className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Nosotros
               </NavLink>
-              
-              <NavLink id="nav-a-flotex" as={Link}  to="/gallery"  className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/gallery"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Galleria
               </NavLink>
-              
-              <NavLink id="nav-a-flotex" as={Link} to="/team" className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+
+              {/* <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/team"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Equipo
-              </NavLink>
-              <NavLink id="nav-a-flotex" as={Link} to="/contact" className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+              </NavLink> */}
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Contacto
               </NavLink>
-              <NavLink id="nav-a-flotex" as={Link} to="/consulta" className={({ isActive }) =>
-                isActive ? "bg-nav-flotex" : normalLink
-              }>
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/consulta"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                }
+              >
                 Consulta
               </NavLink>
             </Nav>
             <Nav>
-              <NavDropdown title="Iniciar Sesión" id="collasible-nav-dropdown" onClick={()=> setModalLoginShow(true)}>
-                
-              </NavDropdown>
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/login"
+                className={({ isActive }) =>
+                  isActive ? "bg-nav-flotex" : normalLink
+                  
+                }
+                onClick={() => setModalLoginShow(true)}
+              >
+                Iniciar Sesión
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -90,13 +128,23 @@ const NavBarExample = () => {
         <Outlet></Outlet>
       </section>
 
-      <ModalLogin 
-      show={modalLoginShow} onHide={() => setModalLoginShow(false)}
+      <ModalLogin
+        show={modalLoginShow}
+        onHide={() => setModalLoginShow(false)}
       />
 
+      <Col>
+        <FloatingWhatsApp
+          accountName="Flotex"
+          chatMessage="Hola te saluda Flotex 😊
+                        en que podemos ayudarte"
+          placeholder="Escribe un mensaje"
+          avatar="/img/Icono-circular.png"
+          className="ayrton1234"
+        />
+      </Col>
 
       <Footer />
-
     </>
   );
 };

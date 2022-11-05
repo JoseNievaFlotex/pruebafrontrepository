@@ -1,15 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import React, { useState } from "react";
-import { Component } from "react";
 import { Button, Col, Container, Form, ListGroup, Row } from "react-bootstrap";
-import swal from 'sweetalert';
 import axios from 'axios';
-import md5 from 'md5'
 import Cookies from "universal-cookie";
 import { useEffect } from "react";
 
-const baseUrl = 'https://jsonplaceholder.typicode.com/posts';
-const cookies = new Cookies();
  
 // class demo6 extends Component {
 //   state={
