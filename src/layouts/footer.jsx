@@ -11,37 +11,31 @@ const Footer = () => {
           <div className="col-md-12 col-lg-4">
             <div className="dk-footer-box-info">
               <a href="index.html" className="footer-logo">
-              <Image src="/img/logo.png" width={"200px"} height={"50px"} />
+                <Image src="/img/logo.png" width={"200px"} height={"50px"} />
               </a>
-              <p className="footer-info-text text-light">
-                
-              </p>
+              <p className="footer-info-text text-light"></p>
               <div className="footer-social-link">
                 <h3>Síguenos en nuestras Redes</h3>
                 <ul>
                   <li className="p-2">
                     <a href="/log.png">
-                        <Image src="/img/facebook.png" />
+                      <Image src="/img/facebook.png" />
                     </a>
                   </li>
                   <li className="p-2">
                     <a href="/log.png">
-                    <Image src="/img/instagram.png" />
+                      <Image src="/img/instagram.png" />
                     </a>
                   </li>
                   <li className="p-2">
                     <a href="/log.png">
-                    <Image src="/img/youtube.png" />
+                      <Image src="/img/youtube.png" />
                     </a>
                   </li>
-                 
                 </ul>
               </div>
             </div>
-
-           
           </div>
-
           <div className="col-md-12 col-lg-8">
             <div className="row">
               <div className="col-md-6">
@@ -56,7 +50,6 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-
               <div className="col-md-6">
                 <div className="contact-us contact-us-last">
                   <div className="contact-icon">
@@ -65,12 +58,9 @@ const Footer = () => {
                       aria-hidden="true"
                     ></i>
                   </div>
-
-                  
                 </div>
               </div>
             </div>
-
             <div className="row">
               <div className="col-md-12 col-lg-6">
                 <div className="footer-widget footer-left-widget">
@@ -92,12 +82,9 @@ const Footer = () => {
                       <a href="/team">Nuestro Equipo</a>
                     </li>
                   </ul>
-                  <ul>
-                    
-                  </ul>
+                  <ul></ul>
                 </div>
               </div>
-
               <div className="col-md-12 col-lg-6">
                 <div className="footer-widget">
                   <div className="section-heading">
@@ -110,16 +97,17 @@ const Footer = () => {
 
                   <div className="text-light">
                     <p>Celular: +51 912345678</p>
-                    
                   </div>
-                  
+
                   <form action="/log.png">
                     <div className="form-row">
                       <div className="col dk-footer-form">
-                        <Form.Control type="email" placeholder="Ingrese su Correo" className="text-light"/>
-                        <Button type="submit">
-                          Enviar
-                        </Button>
+                        <Form.Control
+                          type="email"
+                          placeholder="Ingrese su Correo"
+                          className="text-light"
+                        />
+                        <Button type="submit">Enviar</Button>
                       </div>
                     </div>
                   </form>
@@ -129,20 +117,19 @@ const Footer = () => {
           </div>
         </div>
       </Container>
-
       <div className="copyright">
         <Container className="text-center">
-          
-         <Row>
+          <Row>
             <div className="col-md-12">
-            <Image  className="fotter-logo" src="/img/logodorado.png" />
-              <span> |  &copy;Copyright 2022, Todos Los Derechos Reservados</span>
+              <Image className="fotter-logo" src="/img/logodorado.png" />
+              <span>
+                {" "}
+                | &copy;Copyright 2022, Todos Los Derechos Reservados
+              </span>
             </div>
-         </Row>
+          </Row>
         </Container>
       </div>
-
-    
     </footer>
   );
 };

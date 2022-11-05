@@ -16,7 +16,6 @@ const IntranetLogin = () => {
                   <div className="row">
                     <div className="col-md-9 col-lg-8 mx-auto">
                       <h3 className="login-heading mb-4">Bienvenido!</h3>
-
                       <Form>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                           <Form.Label>Correo</Form.Label>
@@ -35,7 +34,6 @@ const IntranetLogin = () => {
                             placeholder="Password"
                           />
                         </Form.Group>
-
                         <Button
                           variant="success"
                           type="submit"
