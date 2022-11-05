@@ -34,7 +34,7 @@ const NavBarExample = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar collapseOnSelect expand="lg" bg="light">
+      <Navbar collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-4 col-md-4 col-lg-12 col-xl-6 col-xxl-4  ">
@@ -78,13 +78,8 @@ const NavBarExample = () => {
               </NavLink>
             </Nav>
             <Nav>
-              <NavDropdown title="Iniciar Sesión" id="collasible-nav-dropdown">
-                <NavDropdown.Item as={Link} to="" onClick={()=> setModalLoginShow(true)}>
-                  Logearse
-                </NavDropdown.Item>
-                <NavDropdown.Item as={Link} to="">
-                  Registrarse
-                </NavDropdown.Item>
+              <NavDropdown title="Iniciar Sesión" id="collasible-nav-dropdown" onClick={()=> setModalLoginShow(true)}>
+                
               </NavDropdown>
             </Nav>
           </Navbar.Collapse>

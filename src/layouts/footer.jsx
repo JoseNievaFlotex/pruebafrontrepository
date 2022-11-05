@@ -136,7 +136,7 @@ const Footer = () => {
          <Row>
             <div className="col-md-12">
             <Image  className="fotter-logo" src="/img/logodorado.png" />
-              <span> |  &copy;Copyright 2022, Todos Los Derechos Reservados</span>
+              <span> |  &copy; Copyright 2022, Todos Los Derechos Reservados</span>
             </div>
          </Row>
         </Container>

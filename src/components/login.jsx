@@ -47,19 +47,19 @@ class login extends Component {
         <Col>
           <Form className="">
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Nombre Usuario</Form.Label>
-              <Form.Control type="email" placeholder="Usuario" onChange={this.handleChange}/>
-              <Form.Text className="text-muted">
+              <Form.Label>Correo</Form.Label>
+              <Form.Control type="email" placeholder="Correo" onChange={this.handleChange}/>
+              {/* <Form.Text className="text-muted">
                 We'll never share your email with anyone else.
-              </Form.Text>
+              </Form.Text> */}
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
+              <Form.Label>Contraseña</Form.Label>
               <Form.Control type="password" placeholder="Password" onChange={this.handleChange}/>
             </Form.Group>
             <Button variant="primary"  onClick={ ()=> this.iniciarSesion()}  >
-              Login
+              Iniciar sesión
             </Button>
           </Form>
 
