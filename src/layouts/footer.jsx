@@ -70,16 +70,16 @@ const Footer = () => {
                   </div>
                   <ul>
                     <li>
-                      <a href="/about">Nosotros</a>
+                      <a href="http://flotex.pe/about">Nosotros</a>
                     </li>
                     <li>
-                      <a href="/service">Servicios</a>
+                      <a href="http://flotex.pe/consulta">Consulta</a>
                     </li>
                     <li>
-                      <a href="/gallery">Galeria</a>
+                      <a href="http://flotex.pe/gallery">Galeria</a>
                     </li>
                     <li>
-                      <a href="/team">Nuestro Equipo</a>
+                      <a href="http://flotex.pe/contact">Contacto</a>
                     </li>
                   </ul>
                   <ul></ul>
