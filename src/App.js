@@ -15,6 +15,9 @@ import Consulta from './components/consulta';
 import IntranetLogin from './layouts/Auth/Intranet/IntranetLogin';
 
 
+import 'animate.css';
+
+
 function App() {
   
   return (

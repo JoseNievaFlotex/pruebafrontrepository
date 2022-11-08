@@ -140,7 +140,7 @@ const NavBarExample = () => {
                         en que podemos ayudarte"
           placeholder="Escribe un mensaje"
           avatar="/img/Icono-circular.png"
-          className="ayrton1234"
+          statusMessage=""
         />
       </Col>
 
