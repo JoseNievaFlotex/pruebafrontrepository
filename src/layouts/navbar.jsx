@@ -33,7 +33,7 @@ const NavBarExample = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar collapseOnSelect expand="lg" bg="light">
+      <Navbar collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
         <Container>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-4 col-md-4 col-lg-12 col-xl-6 col-xxl-4  ">

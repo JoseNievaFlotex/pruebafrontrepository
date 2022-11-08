@@ -491,7 +491,7 @@ p {
   position: relative;
   color: rgba(0,0,0,.55);
   display: block;
-  padding: 0.5rem 1rem;
+  padding: 11px 1.5rem;
   text-decoration: none;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
@@ -504,11 +504,12 @@ p {
   content: " ";
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
 
-  width: 95px !important;
+  width: 100% !important;
   position: absolute;
   height: 2px;
   top: 44px;
   right: 0px;
+  border-radius: 5px;
 }
 
 /** Probando efectos**/
@@ -518,11 +519,11 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 2px;
+  height: 3px;
   background: linear-gradient(to right, #b47dcd, #e878a2, #eb85ab);
   z-index: 1;
   transform: scaleX(0);
-  
+  border-radius: 5px;
   transition: transform 0.5s ease-in-out;
   transform-origin: center;
 }
@@ -564,6 +565,18 @@ p {
   /* display: none; */
   transform: scale(1.2);
   background-color: bisque;
+}
+.contenedor-bg-flotex-gallery{
+
+  background-image: url(https://adar.com.br/wp-content/uploads/2020/01/Engage-Adar-Bom-Retiro-7630.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+
+  height: 350px;
+  width: 100%;
+
 }
 @media(max-width: 600px) {
   #iframe-flotex-responsive{
