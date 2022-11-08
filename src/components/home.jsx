@@ -1,9 +1,31 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
-import { Container, Row } from "react-bootstrap";
+import {  Container, Row} from "react-bootstrap";
+// import userService from "../services/users";
+// import { useState } from "react";
+// import { useEffect } from "react";
+
 
 const Home = () => {
+
+  // const [userlist, setUserList] = useState([]);
+  // const [showAll, setShowAll] = useState(true)
+
+  // useEffect(() => {
+  //   userService.getAll()
+  //   .then(initialUser => {
+  //     setUserList(initialUser)
+  //   })
+  // }, [])
+
+  // const userShow = showAll ? userlist : userlist.filter(note => note.important)
+
+
+  // console.log(userShow);
+
+  
+
   return (
     <>
       <Carousel variant="dark">
@@ -52,7 +74,7 @@ const Home = () => {
         <Row className="col-sm-8">
           <Image src="https://www.focustextil.com.br/site/assets/img/banner-tecido-personalizado.png" />
         </Row>
-        <Row className="col-sm-2">
+        <Row className="col-sm-1 col-md-2 col-lg-3">
           <h3 className="tejido"> TU UNIVERSO EN TELAS</h3>
         </Row>
       </Container>
