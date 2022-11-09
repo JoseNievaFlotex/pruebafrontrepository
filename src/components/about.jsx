@@ -38,6 +38,7 @@ const About = () => {
              id="widget2"  
              style={{ width: "900px", height: "490px" }}
              ></iframe>
+
           </Row>
         </Container>
         {""}
