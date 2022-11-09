@@ -33,9 +33,11 @@ const About = () => {
           <Row className="p-2">
             <iframe
               style={{ width: "1000px", height: "500px" }}
-              src="https://www.youtube.com/embed/AMq5nSObmtU"
+              src="https://www.youtube.com/embed/AMq5nSObmtU?autoplay=1&mute=1&enablejsapi=1"
               title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              frameborder="0"
+              allowfullscreen
             ></iframe>
           </Row>
         </Container>

@@ -37,7 +37,7 @@ const NavBarExample = () => {
         <Container>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-4 col-md-4 col-lg-12 col-xl-6 col-xxl-4  ">
-              <Image src="/img/logo.png" />
+              <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />

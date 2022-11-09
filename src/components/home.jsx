@@ -44,26 +44,27 @@ const Home = () => {
 
       </Carousel> */}
 
-      <Row className="banner-video-flotex" >
-          <video
-              src=""
+      <Row  >
+          {/* <video
+              src="https://assets.codepen.io/6093409/river.mp4"
               autoPlay={true}
               muted={true}
               loop={true}
               poster=""
-            ></video>
+              height="480"
+            ></video> */}
       </Row>      
 
       <Container className="p-4 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
         <Row className="col-sm-8">
           <h3 className="text-center">L Í N E A S O S T E N I B L E</h3>
-          <Image src="https://www.focustextil.com.br/site/assets/img/sustentavel/green-principal-focus-textil.jpg" />
+          <Image src="/img/flotex-green.jpg" />
         </Row>
       </Container>
       <Container className="d-flex justify-content-center p-2 animate__animated animate__backInRight animate__delay-2s">
         <Row className="col-12 justify-content-center">
           <div className="col-sm-8 row">
-            <Image src="https://www.focustextil.com.br/site/assets/img/banner-tecido-personalizado.png"  className="col-12 img-responsive-unoverso"/>
+            <Image src="/img/VP-2.jpg"  className="col-12 img-responsive-unoverso"/>
 
           </div>
           <Col className="col-sm-2">
