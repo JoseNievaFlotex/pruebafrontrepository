@@ -1,6 +1,6 @@
 import { Col, Nav, Row } from "react-bootstrap";
 import Tab from "react-bootstrap/Tab";
-import Login from "./login";
+import Login from "../layouts/Auth/Login/LoginForm";
 import Register from "./register";
 
 function NavLogin() {
