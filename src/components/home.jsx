@@ -47,7 +47,7 @@ const Home = () => {
           <Image src="/img/flotex-green.jpg" />
         </Row>
       </Container>
-      <Container className="d-flex justify-content-center p-2 animate__animated animate__backInRight animate__delay-2s">
+      <Container className="d-flex justify-content-center p-2 animate__animated animate__backInRight animate__delay-1s">
         <Row className="col-12 justify-content-center">
           <div className="col-sm-8 row">
 

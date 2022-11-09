@@ -45,39 +45,39 @@ const About = () => {
         </Container>
         {""}
         <Container className=" bg-dark text-light fluid col-sm-10">
-          <h1 className="m-5 text-center "> IMPORTACIONES</h1>
+          <h3 className="m-5 text-center "> Nuestros Valores</h3>
           <Row className="banner">
             <Col>
               <Image
                 className="logoempresa"
-                src="https://upload.wikimedia.org/wikipedia/commons/1/1e/RPC-JP_Logo.png"
+                src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-41-1.svg"
               />
               <h5 className="text-center p-3">
                 {" "}
-                Importadora Têxtil Tecidos planos e malhas Moda feminina,
-                masculina, home e pet
+                Creemos en la calidad que se logra en producciones textiles.
               </h5>
             </Col>
             <Col>
               <Image
                 className="logoempresa"
-                src="https://i.pinimg.com/originals/f0/dd/ec/f0ddec76cda8ee2756e663924856f81e.png"
+                src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-37.svg"
               />
               <h5 className="text-center p-3">
                 {" "}
-                Indústria Nacional Malharia, Estamparia, Tinturaria Moda
-                feminina e masculina{" "}
+                Capacitamos a nuestro equipo y 
+                ayudamos a mejorar la calidad de la 
+                atención para que tengan mayor valor comercial{" "}
               </h5>
             </Col>
             <Col>
               <Image
                 className="logoempresa"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Wikimedia-logo.png/480px-Wikimedia-logo.png"
+                src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-42.svg"
               />
               <h5 className="text-center p-3">
                 {" "}
-                Importadora Têxtil Tecidos planos e malha Decoração
-                (móveis/colchões) e calçados
+                Empoderamos mujeres. Más del 
+                50% de nuestro equipo está conformado por mujeres.
               </h5>
             </Col>
           </Row>

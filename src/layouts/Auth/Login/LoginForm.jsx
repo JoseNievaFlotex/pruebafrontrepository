@@ -25,7 +25,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
  
-  const [user, setUser] = useState(null);
+  const [ setUser] = useState(null);
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
