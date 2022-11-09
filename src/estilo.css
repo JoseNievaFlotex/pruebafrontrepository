@@ -637,7 +637,7 @@ p {
   background-size: cover;
   background-attachment: fixed;
 
-  height: 350px;
+  height: 400px;
   width: 100%;
 }
 .demo-top-flotex {
@@ -675,4 +675,14 @@ p {
   position: absolute;
   padding: 80px;
   height: 600px;
+}
+.letter{
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.contactimage
+{
+  height: 590px;
 }

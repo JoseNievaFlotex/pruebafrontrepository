@@ -14,7 +14,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-sm">
               <Row className="col-lg-12 p-1">
-                <Image src="https://www.focustextil.com.br/site/assets/img/imgContato.jpg" />
+                <Image src="/img/showrooms/SHOWROOM6.jpg"  className="contactimage"/>
               </Row>
             </div>
             <div className="col-sm d-flex align-items-center justify-content-center col col-lg-6 ">

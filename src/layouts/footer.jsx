@@ -19,17 +19,17 @@ const Footer = () => {
                 <h3>Síguenos en nuestras Redes</h3>
                 <ul>
                   <li className="p-2">
-                    <a href="/log.png">
+                    <a href="https://www.facebook.com/Flotextextil/" target="_blank">
                       <Image src="/img/facebook.png" />
                     </a>
                   </li>
                   <li className="p-2">
-                    <a href="/log.png">
+                    <a href="https://www.instagram.com/flotex.textil/?hl=es" target="_blank">
                       <Image src="/img/instagram.png" />
                     </a>
                   </li>
                   <li className="p-2">
-                    <a href="/log.png">
+                    <a href="https://www.youtube.com/channel/UCK6fQzxNYlyNp4iUYj2HPDw" target="_blank">
                       <Image src="/img/youtube.png" />
                     </a>
                   </li>

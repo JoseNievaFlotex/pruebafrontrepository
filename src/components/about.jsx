@@ -8,13 +8,15 @@ const About = () => {
   return (
     <>
       <Row className="exposicion">
-        <video
+    
+        <video 
           src="https:\/\/adar.com.br\/wp-content\/uploads\/2020\/01\/Grupo-Adar_2.mp4"
           autoPlay={true}
           muted={true}
           loop={true}
           poster="/img/banner-1.png"
         ></video>
+
         <Container className="col-sm-8 p-5">
           <h1 className="m-5 text-center display-1"> FLOTEX</h1>
           <span className=" m-3 text-center">

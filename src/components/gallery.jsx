@@ -64,7 +64,7 @@ const Gallery = () => {
             </Col>
           </Row>
             
-            <Row className="animate__animated animate__backInUp animate__delay-2s">
+            <Row className="animate__animated animate__backInUp animate__delay-1s">
               <Container className=" col-sm-12 col-md-12 col-lg-12">
                 <Row className="col-sm-12 p-1">
                   <div className="col-lg-3 col-sm-6 p-0 div-img-flotex-galery">
