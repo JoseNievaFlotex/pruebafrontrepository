@@ -31,12 +31,13 @@ const About = () => {
         </Container>
         <Container className="d-flex justify-content-center ">
           <Row className="p-2">
-            <iframe
-              style={{ width: "1000px", height: "500px" }}
-              src="https://www.youtube.com/embed/AMq5nSObmtU"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            ></iframe>
+            <iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+             title="SLIDER CLADD NUEVO"  
+             src="https://www.youtube.com/embed/x4KsG9wKLqo?autoplay=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.cladd.com.ar&amp;widgetid=1"
+             id="widget2"  
+             style={{ width: "900px", height: "490px" }}
+             ></iframe>
           </Row>
         </Container>
         {""}
