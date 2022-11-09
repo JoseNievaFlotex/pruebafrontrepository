@@ -4,7 +4,6 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './estyle.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { toastme } from 'toastmejs';
 ReactDOM.render(
   <React.StrictMode>
     <App />
