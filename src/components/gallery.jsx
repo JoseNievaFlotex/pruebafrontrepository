@@ -26,17 +26,16 @@ const Gallery = () => {
           <Row className="justify-content-md-center">
             <div  lg="6" className="col-lg-6 col-sm-6 pe-0 bg-showroom-flotex animate__animated animate__backInLeft animate__delay-1s">
               <div>
-                <p className="showroom-text">SHOWROOM</p>
-                <h2>BOM RETIRO</h2>
+                <p className="showroom-text">SHOWROOMS</p>
+                <h2>BUEN RETIRO</h2>
                 <p>
-                  Rua Correia de Melo, 111<br/>
-                  São Paulo, Bom Retiro, SP<br/>
-                  Aberto de Segunda à Sexta<br/>
-                  das 8h às 18h<br/>
-                  (11) 3202-5200 / (11) 3202-5201<br/>
+                  JR ANTONIO BAZO, 1070<br/>
+                  LIMA, LA VICTORIA<br/>
+                  2 PISO<br/>
+                  desde las 8 AM hasta las 8 PM<br/>
+                 
                 </p>
                 <div>
-                  <span>icon</span>
                   <h3>PRÓXIMOS EVENTOS</h3>
                 </div>
                 <div>
@@ -65,30 +64,30 @@ const Gallery = () => {
             </Col>
           </Row>
             
-            <Row className="animate__animated animate__backInUp animate__delay-3s">
+            <Row className="animate__animated animate__backInUp animate__delay-2s">
               <Container className=" col-sm-12 col-md-12 col-lg-12">
                 <Row className="col-sm-12 p-1">
                   <div className="col-lg-3 col-sm-6 p-0 div-img-flotex-galery">
                     <Image
-                      src="https://adar.com.br/wp-content/uploads/2019/10/Adar-Bom-Retiro-7643.jpg"
+                      src="/img/showrooms/SHOWROOM1.jpg"
                       className="img-flotex-galery"
                     />
                   </div>
                   <div className="col-lg-3 col-sm-6 p-0">
                     <Image
-                      src="https://adar.com.br/wp-content/uploads/2019/10/showroom_bomretiro.jpg"
+                      src="/img/showrooms/SHOWROOM3.jpg"
                       className="img-flotex-galery"
                     />
                   </div>
                   <div className="col-lg-3 col-sm-6 p-0">
                     <Image
-                      src="https://adar.com.br/wp-content/uploads/2019/10/Adar-Bom-Retiro-7615.jpg"
+                      src="/img/showrooms/SHOWROOM2.jpg"
                       className="img-flotex-galery"
                     />
                   </div>
                   <div className="col-lg-3 col-sm-6 p-0">
                     <Image
-                      src="https://adar.com.br/wp-content/uploads/2019/11/Adar-Bom-Retiro-7764.jpg"
+                      src="/img/showrooms/SHOWROOM4.jpg"
                       className="img-flotex-galery"
                     />
                   </div>

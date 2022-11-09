@@ -6,22 +6,6 @@ import { Col, Container, Row } from "react-bootstrap";
 const Home = () => {
   return (
     <>
-      <Container>
-        <Row>
-          <Image src="/img/cotton1.jpg" className="publicidad" />
-        {/* <Container>
-
-          <Col>
-            <Image src="/img/cotton2.jpg" className="public" />
-          </Col>
-          <Col>
-            <Image src="/img/cotton3.jpg" className="public" />
-          </Col>
-        </Container> */}
-
-
-        </Row>
-      </Container>
       <Row  >
           {/* <video
               src="https://assets.codepen.io/6093409/river.mp4"

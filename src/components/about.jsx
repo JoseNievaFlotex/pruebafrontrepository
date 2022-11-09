@@ -34,9 +34,9 @@ const About = () => {
             <iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="1"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
              title="SLIDER CLADD NUEVO"  
-             src="https://www.youtube.com/embed/x4KsG9wKLqo?autoplay=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.cladd.com.ar&amp;widgetid=1"
+             src="https://www.youtube.com/embed/9dU8k63hboI?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.cladd.com.ar&amp;widgetid=1"
              id="widget2"  
-             style={{ width: "900px", height: "490px" }}
+             style={{ width: "1000px", height: "549px" }}
              ></iframe>
 
           </Row>
