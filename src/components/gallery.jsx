@@ -24,7 +24,7 @@ const Gallery = () => {
             
 
           <Row className="justify-content-md-center">
-            <div  lg="6" className="col-lg-6 col-sm-6 pe-0 bg-showroom-flotex">
+            <div  lg="6" className="col-lg-6 col-sm-6 pe-0 bg-showroom-flotex animate__animated animate__backInLeft animate__delay-1s">
               <div>
                 <p className="showroom-text">SHOWROOM</p>
                 <h2>BOM RETIRO</h2>
@@ -51,7 +51,7 @@ const Gallery = () => {
               </div>
             </div>
             
-            <Col  lg="6" className="col-sm-6 ps-0">
+            <Col  lg="6" className="col-sm-6 ps-0 animate__animated animate__backInRight animate__delay-1s">
               <div>
 
               <Iframe url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d641.6727644361432!2d-77.01396767012542!3d-12.069048211648013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c89c375c24a3%3A0x350640bcdfe8d7ad!2sFLOTEX!5e0!3m2!1ses-419!2spe!4v1667595749103!5m2!1ses-419!2spe"
@@ -65,7 +65,7 @@ const Gallery = () => {
             </Col>
           </Row>
             
-            <Row>
+            <Row className="animate__animated animate__backInUp animate__delay-3s">
               <Container className=" col-sm-12 col-md-12 col-lg-12">
                 <Row className="col-sm-12 p-1">
                   <div className="col-lg-3 col-sm-6 p-0 div-img-flotex-galery">

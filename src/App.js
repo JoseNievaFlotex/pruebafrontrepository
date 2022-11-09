@@ -1,13 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./estilo.css";
 import "./estyle.scss";
-
-import {
-  QueryClient,
-  QueryClientProvider,
-  QueryCache,
-  MutationCache,
-} from "react-query";
 import { toastme } from "toastmejs";
 //importamos los comp creados
 import About from "./components/about";
@@ -21,35 +14,10 @@ import Consulta from "./components/consulta";
 
 import IntranetLogin from "./layouts/Auth/Intranet/IntranetLogin";
 
-const queryClient = new QueryClient({
-  queryCache: new QueryCache({
-    onError: (error) => {
-      if (error.response) {
-        const { mensajes } = error.response.data;
-        toastme.warning(mensajes[0]);
-      } else if (error.request) {
-        toastme.error("APP_ERROR_MESSAGE");
-      }
-    },
-  }),
-
-  mutationCache: new MutationCache({
-    onError: (error) => {
-      const errorStatus = error.response.status;
-      const errorMessages = error.response.data.mensajes;
-      if (errorStatus === 400) {
-        toastme.warning(errorMessages[0]);
-      } else {
-        toastme.error("APP_ERROR_MESSAGE");
-      }
-    },
-  }),
-});
 
 const App = () => {
   return (
     <div className="App">
-      <QueryClientProvider client={queryClient}>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<NavBarExample />}>
@@ -68,7 +36,6 @@ const App = () => {
             </Route>
           </Routes>
         </BrowserRouter>
-      </QueryClientProvider>
     </div>
   );
 };
