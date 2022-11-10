@@ -41,12 +41,14 @@ const Home = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+     
       <Container className="p-4 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
         <Row className="col-sm-8">
           <h3 className="letter">LÍNEA SOSTENIBLE</h3>
           <Image src="/img/flotex-green.jpg" />
         </Row>
       </Container>
+     
       <Container className="d-flex justify-content-center p-2 animate__animated animate__backInRight animate__delay-1s">
         <Row className="col-12 justify-content-center">
           <div className="col-sm-8 row">
