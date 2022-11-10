@@ -52,7 +52,7 @@ const Home = () => {
           <div className="col-sm-8 row">
 
             <Image
-              src="/img/vp1.jpg"
+              src="/img/VP1.jpg"
               className="col-12 img-responsive-unoverso"
             />
           </div>

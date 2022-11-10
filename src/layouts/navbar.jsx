@@ -141,6 +141,7 @@ const NavBarExample = () => {
           placeholder="Escribe un mensaje"
           avatar="/img/Icono-circular.png"
           statusMessage=""
+          phoneNumber="+51 936846098"
         />
       </Col>
 
