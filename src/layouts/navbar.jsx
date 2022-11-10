@@ -17,6 +17,7 @@ const NavBarExample = () => {
     color: "red",
   };
 
+
   return (
     <>
       <Navbar bg="dark" variant="dark">
@@ -50,6 +51,7 @@ const NavBarExample = () => {
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
+                
               >
                 Home
               </NavLink>
@@ -60,6 +62,7 @@ const NavBarExample = () => {
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
+                
               >
                 Nosotros
               </NavLink>
@@ -71,6 +74,7 @@ const NavBarExample = () => {
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
+                
               >
                 Galleria
               </NavLink>
@@ -92,6 +96,7 @@ const NavBarExample = () => {
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
+                
               >
                 Contacto
               </NavLink>
@@ -102,6 +107,7 @@ const NavBarExample = () => {
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
+                
               >
                 Consulta
               </NavLink>

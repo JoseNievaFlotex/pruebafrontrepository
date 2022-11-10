@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
-import { Col, Container, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
 
 const Home = () => {
   return (
@@ -44,7 +45,7 @@ const Home = () => {
 
       </Carousel> */}
 
-      <Row  >
+      <Row className="center" >
           {/* <video
               src="https://assets.codepen.io/6093409/river.mp4"
               autoPlay={true}
