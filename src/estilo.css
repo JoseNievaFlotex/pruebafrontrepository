@@ -610,9 +610,15 @@ p {
 .menu-navbar-flotex a:hover::before {
   transform: scaleX(1);
 }
-.ayrton1234 .styles-module_chatHeader__gaeOA {
-  background-color: #25d366;
+/*COLOR ACTUALIZADO DEL WHATSAP*/
+.styles-module_chatHeader__gaeOA {
+  background-color: #00a884 !important;
 }
+.styles-module_whatsappButton__tVits{
+  background-color: rgb(0, 230, 118) !important;
+}
+/*FIN DEL COLOR ACTUALIZADO DEL WHATSAP*/
+
 /**FIN PROBANDO EFECTOS**/
  /* */
 .bg-showroom-flotex {
@@ -666,7 +672,12 @@ p {
   .img-flotex-galery:hover {
     transform: none;
   }
+  .video-responsive-flotex{
+    height: 240px !important;
+  }
 }
+
+
 
 /*VIDEO*/
 

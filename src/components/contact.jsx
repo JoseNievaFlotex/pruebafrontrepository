@@ -2,7 +2,6 @@ import Row from "react-bootstrap/Row";
 import React from "react";
 import { Button, Col, Container, Form } from "react-bootstrap";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-import Image from "react-bootstrap/Image";
 
 const Contact = () => {
   return (

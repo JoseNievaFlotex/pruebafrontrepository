@@ -72,3 +72,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ##Legacy
 --legacy-peer-deps
+
+##Elimina los commit sin eliminar cambios hechos
+git reset --soft HEAD~1
