@@ -33,16 +33,18 @@ const NavBarExample = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar expand="lg" bg="light" className="menu-navbar-flotex">
-        <Container>
+      <Navbar  collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
+        <Container fluid>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-8 col-md-4 col-lg-8 col-xl-4 col-xxl-4  ">
               <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="me-auto">
+          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '120px' }}
+            navbarScroll>
               <NavLink
                 id="nav-a-flotex"
                 as={Link}

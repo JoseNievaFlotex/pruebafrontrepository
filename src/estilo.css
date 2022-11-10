@@ -527,6 +527,11 @@ p {
   padding-left: 20px;
 }
 
+
+
+/* */
+
+
 .back-to-top {
   position: relative;
   z-index: 2;
@@ -552,6 +557,8 @@ p {
   background: #fa6742;
   border-color: #fa6742;
 }
+
+/* */
 
 #nav-a-flotex {
   position: relative;
@@ -602,10 +609,11 @@ p {
   background-color: #25d366;
 }
 /**FIN PROBANDO EFECTOS**/
-
+ /* */
 .bg-showroom-flotex {
   background-color: #e2e2e2;
 }
+ /* */
 
 .img-flotex-galery {
   /* //background-image: url('https://adar.com.br/wp-content/uploads/2019/10/Adar-Bom-Retiro-7643.jpg'); */
@@ -686,7 +694,7 @@ p {
 {
   height: 590px;
 }
-
+ /* prueba en video nosotros */
 @media (min-width:320px) {
   
 
@@ -795,6 +803,8 @@ p {
   object-fit: cover;
 }
 }
+
+/* logo */
 @media (max-width:775px) {
   
   .responsive-logo-flotex
@@ -803,3 +813,5 @@ p {
   }
   
 }
+/* */
+
