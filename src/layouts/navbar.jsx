@@ -19,7 +19,7 @@ const NavBarExample = () => {
   const [expanded, setExpanded] = useState(false);
   return (
     <>
-      <Navbar bg="dark" variant="dark" >
+      {/* <Navbar bg="dark" variant="dark" >
         <Container className="menu-navbar-flotex ">
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -32,11 +32,11 @@ const NavBarExample = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> */}
       <Navbar  expanded={expanded} expand="lg" bg="light" className="menu-navbar-flotex">
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-4  ">
+            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3  ">
               <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
@@ -125,6 +125,10 @@ const NavBarExample = () => {
                 onClick={() => setModalLoginShow(true)}
               >
                 Iniciar Sesión
+              </NavLink>
+
+              <NavLink id="nav-a-flotex" as={Link} to="/intranet" target="blank">
+                Intranet
               </NavLink>
             </Nav>
           </Navbar.Collapse>
