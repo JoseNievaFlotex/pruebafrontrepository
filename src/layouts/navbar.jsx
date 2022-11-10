@@ -16,7 +16,7 @@ const NavBarExample = () => {
   const normalLink = {
     color: "red",
   };
-
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
       <Navbar bg="dark" variant="dark" >
@@ -33,19 +33,20 @@ const NavBarExample = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar  collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
+      <Navbar  expanded={expanded} expand="lg" bg="light" className="menu-navbar-flotex">
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-8 col-md-4 col-lg-8 col-xl-4 col-xxl-4  ">
+            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-4  ">
               <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
+          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '120px' }}
             navbarScroll>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/"
@@ -56,6 +57,7 @@ const NavBarExample = () => {
                 Home
               </NavLink>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/about"
@@ -67,6 +69,7 @@ const NavBarExample = () => {
               </NavLink>
 
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/gallery"
@@ -88,6 +91,7 @@ const NavBarExample = () => {
                 Equipo
               </NavLink> */}
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/contact"
@@ -98,6 +102,7 @@ const NavBarExample = () => {
                 Contacto
               </NavLink>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/consulta"
