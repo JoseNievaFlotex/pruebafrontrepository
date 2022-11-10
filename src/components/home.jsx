@@ -9,33 +9,21 @@ const Home = () => {
       <><Carousel variant="dark">
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="/img/banner-1.png"
+          className=" w-100"
+          src="/img/banner/banner-1.png"
           alt="First slide" />
-        <Carousel.Caption>
-          <h1 className="display-1">Flotex</h1>
-          <h2 className="">Calidad e Innovación Textíl</h2>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="/img/banner-1.png"
+          className=" w-100"
+          src="/img/banner/banner-5.jpg"
           alt="First slide" />
-        <Carousel.Caption>
-          <h1 className="display-1">Flotex</h1>
-          <h2 className="">Calidad e Innovación Textil</h2>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <Image
-          className="d-block w-100"
-          src="/img/banner-1.png"
+          className=" w-100"
+          src="/img/banner/banner-6.jpg"
           alt="First slide" />
-        <Carousel.Caption>
-          <h1 className="display-1">Flotex</h1>
-          <h2 className="">Calidad e Innovación Textíl</h2>
-        </Carousel.Caption>
       </Carousel.Item>
     </Carousel><Container className="p-4 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
         <Row className="col-sm-8">
@@ -43,7 +31,7 @@ const Home = () => {
           <Image src="/img/flotex-green.jpg" />
         </Row>
       </Container><Container className="d-flex justify-content-center p-2 ">
-        <Row className="col-12 justify-content-center">
+        <Row className="col-12 justify-content-center animate__animated animate__backInRight animate__delay demo-top-flotex">
           <div className="col-sm-8 row">
             <Image src="/img/VP1.jpg" className=" img-responsive-unoverso" />
           </div>
