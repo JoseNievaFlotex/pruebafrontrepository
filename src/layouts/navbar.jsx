@@ -16,11 +16,10 @@ const NavBarExample = () => {
   const normalLink = {
     color: "red",
   };
-
-
+  const [expanded, setExpanded] = useState(false);
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      {/* <Navbar bg="dark" variant="dark" >
         <Container className="menu-navbar-flotex ">
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,48 +32,50 @@ const NavBarExample = () => {
             </Nav>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
-      <Navbar collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
-        <Container>
+      </Navbar> */}
+      <Navbar  expanded={expanded} expand="lg" bg="light" className="menu-navbar-flotex">
+        <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-4 col-md-4 col-lg-12 col-xl-6 col-xxl-4  ">
+            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3  ">
               <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav ">
-            <Nav className="me-auto">
+          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="navbarScroll" />
+          <Navbar.Collapse id="navbarScroll">
+            <Nav className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '120px' }}
+            navbarScroll>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                
               >
                 Home
               </NavLink>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/about"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                
               >
                 Nosotros
               </NavLink>
 
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/gallery"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                
               >
                 Galleria
               </NavLink>
@@ -90,24 +91,24 @@ const NavBarExample = () => {
                 Equipo
               </NavLink> */}
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/contact"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                
               >
                 Contacto
               </NavLink>
               <NavLink
+              onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/consulta"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                
               >
                 Consulta
               </NavLink>
@@ -124,6 +125,10 @@ const NavBarExample = () => {
                 onClick={() => setModalLoginShow(true)}
               >
                 Iniciar Sesión
+              </NavLink>
+
+              <NavLink id="nav-a-flotex" as={Link} to="/intranet" target="blank">
+                Intranet
               </NavLink>
             </Nav>
           </Navbar.Collapse>
@@ -147,6 +152,7 @@ const NavBarExample = () => {
           placeholder="Escribe un mensaje"
           avatar="/img/Icono-circular.png"
           statusMessage=""
+          phoneNumber="+51 936846098"
         />
       </Col>
 

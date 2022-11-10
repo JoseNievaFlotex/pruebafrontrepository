@@ -1,7 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./estilo.css";
 import "./estyle.scss";
-import { toastme } from "toastmejs";
 //importamos los comp creados
 import About from "./components/about";
 import Contact from "./components/contact";

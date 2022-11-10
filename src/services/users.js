@@ -3,11 +3,11 @@ const baseURL = "http://localhost:5000/user";
 
 let token = null
 
-const setToken = newToken => {
+export const setToken = newToken => {
     token = `Bearer ${newToken}`
 }
 
-const getAll =  () => {
+export const getAll =  () => {
     const config = {
         headers: {
             Authorization: token
@@ -18,7 +18,7 @@ const getAll =  () => {
   return request.then(response => response.data);
 };
 
-const createUser = (newObject) => {
+export  const createUser = (newObject) => {
     const config = {
         headers: {
             Authorization: token
@@ -27,5 +27,5 @@ const createUser = (newObject) => {
     const request = axios.post(baseURL, newObject, config)
     return request.then(response => response.data);
 }
-
-export default { getAll, createUser, setToken };
+// eslint-disable-next-line import/no-anonymous-default-export
+export default {setToken, getAll, createUser}
