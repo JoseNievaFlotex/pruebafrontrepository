@@ -57,7 +57,7 @@ const Contact = () => {
                   />
                 </FloatingLabel>
                 <div className="d-grid gap-2 pb-3 pt-3">
-                  <Button variant="dark" className="" size="lg">
+                  <Button variant="dark" className="color-btn-flotex" size="lg">
                     {" "}
                     Enviar{" "}
                   </Button>

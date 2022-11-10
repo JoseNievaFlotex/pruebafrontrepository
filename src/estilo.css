@@ -267,7 +267,7 @@ p {
 
 .dk-footer {
   padding: 20px 0 0;
-  background-color: #151414;
+  background-color: #0F406F;
   position: relative;
   z-index: 2;
 }
@@ -292,7 +292,7 @@ p {
 .dk-footer-box-info {
   position: absolute;
   top: 0px;
-  background: #202020;
+  background: #18538b7a;
   padding: 40px;
   z-index: 2;
 }
@@ -334,6 +334,9 @@ p {
 }
 .dk-footer-box-info .footer-social-link a i.fa-instagram {
   background-color: #b7242a;
+}
+.color-btn-flotex{
+  background-color: #0F406F !important;
 }
 
 .footer-awarad {
@@ -825,3 +828,6 @@ p {
 }
 /* */
 
+.color-btn-flotex{
+  background-color: #0F406F;
+}
