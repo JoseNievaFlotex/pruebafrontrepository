@@ -51,7 +51,7 @@ const About = () => {
         </Row>
       </Container>
       {""}
-      <Container className=" bg-dark text-light fluid col-sm-6 col-md-8 col-md-10">
+      <Container className=" bg-dark text-light fluid col-sm-6 col-md-8 col-md-10 ">
         <h3 className="m-5 text-center "> Nuestros Valores</h3>
         <Row className="banner">
           <Col>
@@ -88,6 +88,7 @@ const About = () => {
           </Col>
         </Row>
       </Container>
+      
     </>
   );
 };
