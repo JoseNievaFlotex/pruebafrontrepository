@@ -48,10 +48,10 @@ const Home = () => {
         </Row>
       </Container>
       <Container className="d-flex justify-content-center p-2 animate__animated animate__backInRight animate__delay-1s">
-        <Row className=" justify-content-center">
-          <Col className="col-sm-8 col-md-8 col-lg-8 col-xl-8 col-xxl-10 row">
+        <Row className="col-12 justify-content-center">
+          <div className="col-sm-8 row">
             <Image src="/img/VP1.jpg" className=" img-responsive-unoverso" />
-          </Col>
+          </div>
           <Col className="col-sm-2">
             <h3 className="tejido"> TU UNIVERSO EN TELAS</h3>
           </Col>
