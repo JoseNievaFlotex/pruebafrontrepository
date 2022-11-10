@@ -795,3 +795,11 @@ p {
   object-fit: cover;
 }
 }
+@media (max-width:775px) {
+  
+  .responsive-logo-flotex
+  {
+    height: 50px;
+  }
+  
+}

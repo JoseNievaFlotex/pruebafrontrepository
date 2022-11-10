@@ -19,7 +19,7 @@ const NavBarExample = () => {
 
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" >
         <Container className="menu-navbar-flotex ">
           <Navbar.Collapse id="basic-navbar-nav">
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -33,10 +33,10 @@ const NavBarExample = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Navbar collapseOnSelect expand="lg" bg="light" className="menu-navbar-flotex">
+      <Navbar expand="lg" bg="light" className="menu-navbar-flotex">
         <Container>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-4 col-md-4 col-lg-12 col-xl-6 col-xxl-4  ">
+            <Row className="col-sm-8 col-md-4 col-lg-8 col-xl-4 col-xxl-4  ">
               <Image src="/img/logo.png" className="responsive-logo-flotex"/>
             </Row>
           </Navbar.Brand>
