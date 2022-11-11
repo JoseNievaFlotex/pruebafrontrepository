@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer id="dk-footer" className="dk-footer">
       <Container className="" >
-        <div className="row">
-          <div className="col-md-12 col-lg-4">
+        <div className="row justify-content-center">
+          <div className="col-md-12 col-lg-4 contenedor-flotex-logo-contac">
             <div className="dk-footer-box-info">
               <a href="index.html" className="footer-logo">
 
@@ -53,16 +53,7 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="contact-us contact-us-last">
-                  <div className="contact-icon">
-                    <i
-                      className="fa fa-volume-control-phone"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div className="row">
               <div className="col-md-12 col-lg-6">
