@@ -8,7 +8,7 @@ const Contact = () => {
      
           <>
     <Container className="d-flex justify-content-center contact-flotex-responsive">
-      <Row className="col-sm-4 animate__animated animate__backInDown">
+      <Row className="col-sm-4 animate__animated animate__backInLeft">
         <Col>
           <h3 className="text-color-flotex">CONTACTATE CON UNO DE NUESTROS VENDEDORES</h3>
           

@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import { Col } from "react-bootstrap";
-import ModalLogin from "../components/modalLogin";
+import ModalLogin from "../views/modalLogin";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Footer from "./footer";

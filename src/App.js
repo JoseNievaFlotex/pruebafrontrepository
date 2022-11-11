@@ -2,14 +2,14 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import "./estilo.css";
 import "./estyle.scss";
 //importamos los comp creados
-import About from "./components/about";
-import Contact from "./components/contact";
-import Home from "./components/home";
+import About from "./views/about";
+import Contact from "./views/contact";
+import Home from "./views/home";
 import NavBarExample from "./layouts/navbar";
-import Gallery from "./components/gallery";
-import Team from "./components/Team";
-import Features from "./components/features";
-import Consulta from "./components/consulta";
+import Gallery from "./views/gallery";
+import Team from "./views/Team";
+import Features from "./views/features";
+import Consulta from "./views/consulta";
 import IntranetLogin from "./layouts/Auth/Intranet/IntranetLogin";
 import { QueryClient, QueryClientProvider } from "react-query";
 
