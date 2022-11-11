@@ -50,8 +50,7 @@ const Home = () => {
       </Container>
       <Container className="d-flex justify-content-center pt-5 pb-3">
         <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center">
-          
-        <Col className="texto-public cotton-text-flex">
+          <Col className="texto-public cotton-text-flex">
             <p className="text-center">
               Tela de alta Calidad, el bordado le añade textura a la superficie.
             </p>
@@ -66,14 +65,10 @@ const Home = () => {
               src="/img/prueba/pruebacottom.png"
               className="pruebadeface img-cotton-responsive"
             />
-            
           </div>
-          
         </Row>
       </Container>
-
       <h2 className="text-center m-4 text-color-flotex">PROMOCIONES</h2>
-
       <Container className="galleria col-sm-8 col-md-8 col-lg-8">
         <Row className="col-sm-4 p-1">
           <Image src="/img/telas/Ribest2.png" className="efecto" />
