@@ -8,8 +8,8 @@ const Footer = () => {
   return (
     <footer id="dk-footer" className="dk-footer">
       <Container className="" >
-        <div className="row">
-          <div className="col-md-12 col-lg-4">
+        <div className="row justify-content-center">
+          <div className="col-md-12 col-lg-4 contenedor-flotex-logo-contac">
             <div className="dk-footer-box-info">
               <a href="index.html" className="footer-logo">
 

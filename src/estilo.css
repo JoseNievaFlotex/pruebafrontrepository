@@ -681,6 +681,27 @@ p {
   .video-responsive-flotex{
     height: 240px !important;
   }
+  .dk-footer-box-info{
+    position: initial;
+    padding: 24px 48px;
+    /* padding: 20px 50px; */
+  }
+  .dk-footer-box-info .footer-social-link h3{
+    font-size: 18px;
+    margin-bottom: 6px;
+
+  }
+  .dk-footer .contact-us{
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+  .contenedor-flotex-logo-contac{
+    max-width: 90% !important; 
+  }
+  .footer-logo img{
+    width: 150px !important;
+  }
 }
 
 
@@ -838,7 +859,7 @@ p {
   background-color: #0F406F;
 }
 /* */ 
-@media (min-width: 500px) {
+@media (min-width: 400px) {
   .pruebadeface{
     height: 300px;
   

@@ -41,7 +41,7 @@ const Home = () => {
         </Row>
 
       </Container>
-      <Container className="d-flex justify-content-center">
+      <Container className="d-flex justify-content-center ">
         <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
           <Col>
           <Image  src="/img/prueba/pruebacottom.png"  className="pruebadeface"/>
