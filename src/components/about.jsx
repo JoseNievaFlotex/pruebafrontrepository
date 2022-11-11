@@ -23,7 +23,7 @@ const About = () => {
       <Container className="text-center">
         <Row >
           <h1 > FLOTEX</h1>
-          <h5  >
+          <p >
             O Grupo, composto pelas empresas Adar, Artec e Texliving, atua em
             diferentes segmentos do mercado têxtil sendo hoje um dos maiores e
             ma is completos do Brasil. Cada marca possui as características
@@ -33,7 +33,7 @@ const About = () => {
             decoração. Uma equipe treinada de representantes atende clientes em
             todo território nacional, oferecendo o melhor mix de p rodutos para
             cada região.
-          </h5>
+          </p>
         </Row>
       </Container>
       <Container className="d-flex justify-content-center pt-5">
@@ -52,39 +52,39 @@ const About = () => {
       </Container>
       {""}
       <Container className=" bg-dark text-light fluid col-sm-6 col-md-8 col-md-10 ">
-        <h3 className="m-5 text-center "> Nuestros Valores</h3>
+        <h3 className="m-2 text-center p-4 "> Nuestros Valores</h3>
         <Row className="banner">
           <Col>
             <Image
               className="logoempresa"
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-41-1.svg"
             />
-            <h5 className="text-center p-3">
+            <p className="text-center p-3">
               {" "}
               Creemos en la calidad que se logra en producciones textiles.
-            </h5>
+            </p>
           </Col>
           <Col>
             <Image
               className="logoempresa"
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-37.svg"
             />
-            <h5 className="text-center p-3">
+            <p className="text-center p-3">
               {" "}
               Capacitamos a nuestro equipo y ayudamos a mejorar la calidad de la
               atención para que tengan mayor valor comercial{" "}
-            </h5>
+            </p>
           </Col>
           <Col>
             <Image
               className="logoempresa"
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-42.svg"
             />
-            <h5 className="text-center p-3">
+            <p className="text-center p-3">
               {" "}
               Empoderamos mujeres. Más del 50% de nuestro equipo está conformado
               por mujeres.
-            </h5>
+            </p>
           </Col>
         </Row>
       </Container>
