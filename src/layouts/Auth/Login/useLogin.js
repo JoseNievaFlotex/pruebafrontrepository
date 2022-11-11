@@ -15,8 +15,9 @@ const useLogin = () => {
     }, [credentials]);
     if(data){
         LocalStorageService.guardarAutorizacion(data);
+        // eslint-disable-next-line no-restricted-globals
+        location.href = '/about';
     }
-    console.log(data, 'sera cierto?');
     return {setCredentials};
 };
 export default useLogin;
