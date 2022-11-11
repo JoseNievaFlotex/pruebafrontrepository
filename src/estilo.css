@@ -859,7 +859,7 @@ p {
   background-color: #0F406F;
 }
 /* */ 
-@media (min-width: 400px) {
+@media (min-width: 300px) {
   .pruebadeface{
     height: 300px;
   
