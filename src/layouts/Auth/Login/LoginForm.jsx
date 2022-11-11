@@ -25,7 +25,8 @@ const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
  
-  const [ setUser] = useState(null);
+  const [ usertoken,setUser] = useState(null);
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -38,19 +39,20 @@ const LoginForm = () => {
         'loggedUser', JSON.stringify(users)
       )
       console.log(users);
-      userService.setToken(users.token)
+      await userService.setToken(users.token)
       setUser(users);
       setEmail("");
       setPassword("");
     } catch (error) {
       console.error("error");
     }
+    console.log(usertoken);
   };
   return (
     <Container>
       <Row>
         <Col>
-          <Form onSubmit={handleSubmit}>
+          <Form to='#'>
             <Form.Group className="mb-3">
               <Form.Label>Nombre Usuario</Form.Label>
               <Form.Control
@@ -76,7 +78,7 @@ const LoginForm = () => {
                 required
               />
             </Form.Group>
-            <Button id="btn-flotex"	type='submit' >
+            <Button id="btn-flotex"	type='submit'  onSubmit={handleSubmit}>
               Acceder
             </Button>
           </Form>

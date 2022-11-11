@@ -53,16 +53,6 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6">
-                <div className="contact-us contact-us-last">
-                  <div className="contact-icon">
-                    <i
-                      className="fa fa-volume-control-phone"
-                      aria-hidden="true"
-                    ></i>
-                  </div>
-                </div>
-              </div>
             </div>
             <div className="row">
               <div className="col-md-12 col-lg-6">
