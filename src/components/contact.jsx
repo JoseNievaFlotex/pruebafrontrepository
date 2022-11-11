@@ -2,24 +2,28 @@ import Row from "react-bootstrap/Row";
 import React from "react";
 import { Button, Col, Container, Form } from "react-bootstrap";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
-
+import Image from "react-bootstrap/Image";
 const Contact = () => {
   return (
      
           <>
-    <Container className="d-flex justify-content-center">
-      <Row className="col-sm-4">
+    <Container className="d-flex justify-content-center contact-flotex-responsive">
+      <Row className="col-sm-4 animate__animated animate__backInDown">
         <Col>
-        <h3>CONTACTATE CON UNO DE NUESTROS VENDEDORES</h3>
-        <h5>
-          Rubino:
-        </h5>
+          <h3 className="text-color-flotex">CONTACTATE CON UNO DE NUESTROS VENDEDORES</h3>
+          
+          <div className="col-sm-12 row">
+            <Image
+              src="/img/contact.jpg"
+              className=""
+            />
+          </div>
         </Col>
       </Row>
-      <Row className="col-sm-10 animate__animated animate__backInDown animate__delay demo-top-flotex">
+      <Row className="col-sm-8 animate__animated animate__backInDown animate__delay demo-top-flotex">
         <Col className="d-flex justify-content-center">
         <Form className="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-            <h3 className="text-end text-primary" >CONTACTANOS</h3>
+            <h3 className="text-end text-primary text-color-flotex" >CONTACTANOS</h3>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control type="nombre" placeholder="Nombre" size="lg" />
             </Form.Group>

@@ -24,15 +24,7 @@ const About = () => {
         <Row >
           <h1 > FLOTEX</h1>
           <p >
-            O Grupo, composto pelas empresas Adar, Artec e Texliving, atua em
-            diferentes segmentos do mercado têxtil sendo hoje um dos maiores e
-            ma is completos do Brasil. Cada marca possui as características
-            necessárias para atender cada mercado de forma personalizada.
-            Juntos, o grupo oferece produtos de alta qualidade, importados e
-            nacionais, que atendem tanto o mercado da moda, quanto o da
-            decoração. Uma equipe treinada de representantes atende clientes em
-            todo território nacional, oferecendo o melhor mix de p rodutos para
-            cada região.
+          El Grupo, compuesto por las empresas Flotex, actúa en diferentes segmentos del mercado textil y es hoy uno de los más grandes y completos del Perú. Cada marca tiene las características necesarias para atender cada mercado de manera personalizada. Juntos, el grupo ofrece productos de alta calidad, importados y nacionales, que atienden tanto al mercado de la moda como al de la decoración. Un equipo capacitado de representantes atiende a clientes en todo el territorio nacional, ofreciendo el mejor mix de productos para cada región.
           </p>
         </Row>
       </Container>
