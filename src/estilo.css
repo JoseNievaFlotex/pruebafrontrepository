@@ -1,5 +1,7 @@
 
-
+*{
+  font-family: "Calibri";
+}
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -269,7 +271,7 @@ p {
 
 .dk-footer {
   padding: 20px 0 0;
-  background-color: #151414;
+  background-color: #0F406F;
   position: relative;
   z-index: 2;
 }
@@ -294,7 +296,7 @@ p {
 .dk-footer-box-info {
   position: absolute;
   top: 0px;
-  background: #202020;
+  background: #18538b7a;
   padding: 40px;
   z-index: 2;
 }
@@ -336,6 +338,9 @@ p {
 }
 .dk-footer-box-info .footer-social-link a i.fa-instagram {
   background-color: #b7242a;
+}
+.color-btn-flotex{
+  background-color: #0F406F !important;
 }
 
 .footer-awarad {
@@ -579,7 +584,6 @@ p {
 .bg-nav-flotex::after {
   content: " ";
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
-
   width: 100% !important;
   position: absolute;
   height: 0px;
@@ -829,6 +833,10 @@ p {
 }
 /* */
 
+
+.color-btn-flotex{
+  background-color: #0F406F;
+}
 /* */ 
 @media (min-width: 500px) {
   .pruebadeface{
@@ -848,4 +856,5 @@ p {
     height: 800px;
   
 }
+
 }
