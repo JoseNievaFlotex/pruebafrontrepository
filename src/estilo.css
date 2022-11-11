@@ -702,9 +702,32 @@ p {
   .footer-logo img{
     width: 150px !important;
   }
+  .cotton-text-flex{
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .cotton-text-flex p{
+    text-align: center;
+  }
+  .img-cotton-responsive{
+    height: 320px !important;
+  }
 }
 
+.cotton-text-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-evenly;
+}
 
+.cotton-text-flex p{
+  max-width: 315px;
+  font-size: 28px;
+
+  color: #0F406F;
+  /* text-shadow: 2px 1px 5px; */
+}
 
 /*VIDEO*/
 
@@ -879,8 +902,19 @@ p {
 }
 
 }
-/* */
 
+.pruebadeface{
+  height: 680px;
+  width: 620px;
+  border-radius: 7px;
+  box-shadow: 1px 2px 8px -1px;
+  padding: 0 !important;
+  
+}
+/* */
+.text-color-flotex{
+  color: #0F406F;
+}
 
 /*  */
 
