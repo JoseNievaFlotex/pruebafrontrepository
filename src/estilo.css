@@ -672,6 +672,9 @@ p {
   visibility: hidden !important;
 }
 @media (max-width: 600px) {
+  .contact-flotex-responsive{
+    flex-direction: column;
+  }
   #iframe-flotex-responsive {
     height: 1188px !important;
   }
@@ -913,7 +916,7 @@ p {
 }
 /* */
 .text-color-flotex{
-  color: #0F406F;
+  color: #0F406F !important;
 }
 
 /*  */
