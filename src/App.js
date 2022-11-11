@@ -10,7 +10,6 @@ import Gallery from "./components/gallery";
 import Team from "./components/Team";
 import Features from "./components/features";
 import Consulta from "./components/consulta";
-
 import IntranetLogin from "./layouts/Auth/Intranet/IntranetLogin";
 
 

@@ -60,7 +60,7 @@ function Register () {
             <Form.Group className="mb-3">
               <Form.Check type="checkbox" label="Check me out" />
             </Form.Group>
-            <Button variant="primary" type="submit">
+            <Button id="btn-flotex" variant="primary" type="submit">
               Registrar
             </Button>
           </Form>

@@ -76,7 +76,7 @@ const LoginForm = () => {
                 required
               />
             </Form.Group>
-            <Button 	type='submit' >
+            <Button id="btn-flotex"	type='submit' >
               Acceder
             </Button>
           </Form>

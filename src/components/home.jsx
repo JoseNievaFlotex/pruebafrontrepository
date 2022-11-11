@@ -43,7 +43,20 @@ const Home = () => {
       </Container>
       <Container className="d-flex justify-content-center">
         <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+          <Col>
           <Image  src="/img/prueba/pruebacottom.png"  className="pruebadeface"/>
+          </Col>
+          <Col className="texto-public">
+          <p className="text-center">
+            Tela de alta Calidad, el bordado le añade textura a la superficie.
+          </p>
+          <p className=""> 
+            Es rígida, ligera y resistente.
+          </p>
+          <p className="">
+            Perfecta para confeccionar blusas, camisas, faldas, pantalones y vestidos.
+          </p>
+          </Col>
         </Row>
         
 

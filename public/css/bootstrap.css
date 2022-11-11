@@ -12,6 +12,8 @@ html {
 body {
   margin: 0;
 }
+
+
 article,
 aside,
 details,
@@ -3121,13 +3123,13 @@ fieldset[disabled] .btn-default.focus {
 .btn-primary:focus,
 .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
+  background-color: #0F406F;
   border-color: #122b40;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #0F406F;
+  border-color: #0F406F;
 }
 .btn-primary:active,
 .btn-primary.active,

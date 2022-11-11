@@ -54,7 +54,7 @@ const Contact = () => {
                 style={{ height: "100px" }} />
             </FloatingLabel>
             <div className="d-grid gap-2 pb-3 pt-3">
-              <Button className="btn-primary" size="lg">
+              <Button id="btn-flotex" size="lg">
                 {" "}
                 Enviar{" "}
               </Button>
