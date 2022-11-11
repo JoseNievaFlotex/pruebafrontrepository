@@ -13,7 +13,7 @@ const Footer = () => {
             <div className="dk-footer-box-info">
               <a href="index.html" className="footer-logo">
 
-                <Image src="/img/logos/logodorado.png" width={"200px"} height={"50px"} />
+                <Image src="/img/logos/logoDoradoBig.png" width={"200px"} height={"50px"} />
 
               </a>
               <p className="footer-info-text text-light"></p>
