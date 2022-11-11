@@ -1,3 +1,7 @@
+
+*{
+  font-family: "Calibri";
+}
 .carousel-caption {
   position: absolute;
   right: 15%;
@@ -575,19 +579,24 @@ p {
 .bg-nav-flotex {
   background-color: transparent;
   color: black;
+  
 }
 .bg-nav-flotex::after {
   content: " ";
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%) !important;
-
   width: 100% !important;
   position: absolute;
-  height: 2px;
+  height: 0px;
   top: 44px;
   right: 0px;
   border-radius: 5px;
 }
 
+.positiones
+{
+  display: flex;
+  align-items: flex-end;
+}
 /** Probando efectos**/
 .menu-navbar-flotex a::before {
   content: "";
@@ -703,10 +712,6 @@ p {
   letter-spacing: 5px;
 }
 
-.contactimage
-{
-  height: 590px;
-}
  /* prueba en video nosotros */
 @media (min-width:320px) {
   

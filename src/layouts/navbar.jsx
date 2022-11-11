@@ -19,34 +19,30 @@ const NavBarExample = () => {
   const [expanded, setExpanded] = useState(false);
   return (
     <>
-      {/* <Navbar bg="dark" variant="dark" >
-        <Container className="menu-navbar-flotex ">
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Nav className="me-auto"></Nav>
-            <Nav>
-              <Nav.Link as={Link} to="/intranet">
-                Intranet
-              </Nav.Link>
-              <Image src="/img/lock.png" className="lock" />
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar> */}
-      <Navbar  expanded={expanded} expand="lg" bg="light" className="menu-navbar-flotex">
+      <Navbar
+        expanded={expanded}
+        expand="lg"
+        bg="light"
+        className="menu-navbar-flotex"
+      >
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3  ">
-              <Image src="/img/logo.png" className="responsive-logo-flotex"/>
+              <Image src="/img/logo.png" className="responsive-logo-flotex" />
             </Row>
           </Navbar.Brand>
-          <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="navbarScroll" />
+          <Navbar.Toggle
+            onClick={() => setExpanded(expanded ? false : "expanded")}
+            aria-controls="navbarScroll"
+          />
           <Navbar.Collapse id="navbarScroll">
-            <Nav className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '120px' }}
-            navbarScroll>
+            <Nav
+              className="m-auto my-2 my-lg-0"
+              style={{ maxHeight: "150px" }}
+              navbarScroll
+            >
               <NavLink
-              onClick={() => setExpanded(false)}
+                onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/"
@@ -57,7 +53,7 @@ const NavBarExample = () => {
                 Home
               </NavLink>
               <NavLink
-              onClick={() => setExpanded(false)}
+                onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/about"
@@ -69,7 +65,7 @@ const NavBarExample = () => {
               </NavLink>
 
               <NavLink
-              onClick={() => setExpanded(false)}
+                onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/gallery"
@@ -91,7 +87,7 @@ const NavBarExample = () => {
                 Equipo
               </NavLink> */}
               <NavLink
-              onClick={() => setExpanded(false)}
+                onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/contact"
@@ -102,7 +98,7 @@ const NavBarExample = () => {
                 Contacto
               </NavLink>
               <NavLink
-              onClick={() => setExpanded(false)}
+                onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
                 as={Link}
                 to="/consulta"
@@ -113,21 +109,30 @@ const NavBarExample = () => {
                 Consulta
               </NavLink>
             </Nav>
-            <Nav>
+            <Nav
+              className="m-auto my-2 my-lg-0"
+              style={{ maxHeight: "120px" }}
+              navbarScroll
+            >
               <NavLink
                 id="nav-a-flotex"
                 as={Link}
                 to="/login"
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
-                  
                 }
                 onClick={() => setModalLoginShow(true)}
               >
                 Iniciar Sesión
               </NavLink>
 
-              <NavLink id="nav-a-flotex" as={Link} to="/intranet" target="blank">
+              <NavLink
+                id="nav-a-flotex"
+                as={Link}
+                to="/intranet"
+                target="blank"
+                onClick={() => setExpanded(false)}
+              >
                 Intranet
               </NavLink>
             </Nav>
