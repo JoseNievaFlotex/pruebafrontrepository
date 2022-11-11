@@ -16,10 +16,10 @@ const Contact = () => {
         </h5>
         </Col>
       </Row>
-      <Row className="col-sm-10 ">
+      <Row className="col-sm-10 animate__animated animate__backInDown animate__delay demo-top-flotex">
         <Col className="d-flex justify-content-center">
         <Form className="col-sm-6 col-md-6 col-lg-8 col-xl-8">
-            <h3 className="text-end" >CONTACTO</h3>
+            <h3 className="text-end text-primary" >CONTACTANOS</h3>
             <Form.Group className="mb-3" controlId="formBasicEmail">
               <Form.Control type="nombre" placeholder="Nombre" size="lg" />
             </Form.Group>
@@ -54,7 +54,7 @@ const Contact = () => {
                 style={{ height: "100px" }} />
             </FloatingLabel>
             <div className="d-grid gap-2 pb-3 pt-3">
-              <Button color="#0F406F" className="" size="lg">
+              <Button className="btn-primary" size="lg">
                 {" "}
                 Enviar{" "}
               </Button>

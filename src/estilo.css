@@ -833,6 +833,28 @@ p {
 }
 /* */
 
+
 .color-btn-flotex{
   background-color: #0F406F;
+}
+/* */ 
+@media (min-width: 500px) {
+  .pruebadeface{
+    height: 300px;
+  
+}
+}
+@media (min-width: 900px) {
+  .pruebadeface{
+    height: 500px;
+  
+}
+}
+
+@media only screen and (orientation: landscape){
+  .pruebadeface{
+    height: 800px;
+  
+}
+
 }

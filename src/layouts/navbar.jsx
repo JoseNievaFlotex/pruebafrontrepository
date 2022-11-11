@@ -27,8 +27,8 @@ const NavBarExample = () => {
       >
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3  ">
-              <Image src="/img/logo.png" className="responsive-logo-flotex" />
+            <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3 animate__animated animate__swing">
+              <Image src="/img/logos/logo.png" className="responsive-logo-flotex" />
             </Row>
           </Navbar.Brand>
           <Navbar.Toggle
