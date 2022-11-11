@@ -31,7 +31,7 @@ const Home = () => {
           <Image src="/img/flotexgreen/flotex-green.jpg" />
         </Row>
       </Container><Container className="d-flex justify-content-center p-2 ">
-        <Row className="col-12 justify-content-center animate__animated animate__backInUp animate__delay demo-top-flotex">
+        <Row className="col-12 justify-content-center animate__animated animate__backInUp animate__delay-1s demo-top-flotex">
           <div className="col-sm-8 row">
             <Image src="/img/flotexgreen/VP1.jpg" className=" img-responsive-unoverso" />
           </div>
