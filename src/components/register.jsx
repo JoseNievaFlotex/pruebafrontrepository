@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
-import userService from "../services/users";
+import userService from "../services/apis/users";
 
 function Register () {
   const  [name, setName]  = useState("");

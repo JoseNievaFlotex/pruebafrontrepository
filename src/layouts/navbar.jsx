@@ -155,7 +155,7 @@ const NavBarExample = () => {
           chatMessage="Hola te saluda Flotex 😊
                         en que podemos ayudarte"
           placeholder="Escribe un mensaje"
-          avatar="/img/Icono-circular.png"
+          avatar="/img/logos/Icono-circular.png"
           statusMessage=""
           phoneNumber="+51 936846098"
         />

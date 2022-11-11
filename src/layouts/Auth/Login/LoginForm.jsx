@@ -1,4 +1,3 @@
-
 import { useFormik } from "formik";
 import React from "react";
 // import { useEffect } from "react";
@@ -9,70 +8,39 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import { useMutation } from "react-query";
-import loginService from "../../../services/auth";
+import loginService from "../../../services/apis/auth";
+import localStorage from "../../../services/apis/localStorage";
+import useLogin from "./useLogin";
 // import userService from '../../../services/users';
 
 const LoginForm = () => {
-
-  // useEffect(() => {
-  //   const loggerUserKson = window.localStorage.getItem('loggedUser')
-  //   if(loggerUserKson)
-  //   {
-  //     const usr = JSON.parse(loggerUserKson)
-  //     setUser(usr)
-  //     userService.setToken(usr.token)
-  //   }
-  // })
-  
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
+  const {setCredentials} = useLogin();
  
-  // const [ usertoken,setUser] = useState();
-  
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   try {
-  //     const users = await loginService.login({
-  //       email,
-  //       password
-  //     });
-
-  //     window.localStorage.setItem(
-  //       'loggedUser', JSON.stringify(users)
-  //     )
-  //     console.log(users);
-  //     await userService.setToken(users.token)
-  //     setUser(users);
-  //     setEmail("");
-  //     setPassword("");
-  //   } catch (error) {
-  //     console.error("error");
-  //   }
-  //   console.log(usertoken);
-  // };
-  const {isLoading, error, isError, mutateAsync, data } = useMutation(
-    "login",
-    loginService
-  )
+//   const { isLoading, error, isError, mutateAsync, data } = useMutation(
+//     // "login",
+//     // loginService,
+// //   );
+// async (values) => {
+//   await mutateAsync({
+//     email: values.email,
+//     password: values.password,
+//   });
+// },
+//  /* datos en localStorage*/
+//   localStorage.guardarAutorizacion(data);
+//   /////////////////////////////////////
 
   const formik = useFormik({
-    initialValues:{ email: '',
-      password: ''
-    },
-    onSubmit: async (values)  => {await mutateAsync
-    ({
-      email: values.email,
-      password: values.password
-    })}
+    initialValues: { email: "", password: "" },
+    onSubmit: values => setCredentials(values),
     
-  })
+  });
 
-  console.log(data);
   return (
     <Container>
       <Row>
         <Col>
-          <Form to='#' onSubmit={formik.handleSubmit}>
+          <Form to="#" onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3">
               <Form.Label>Nombre Usuario</Form.Label>
               <Form.Control
@@ -81,12 +49,12 @@ const LoginForm = () => {
                 onChange={formik.handleChange}
                 value={formik.values.email}
                 placeholder="Correo"
-                autoComplete='email'
+                autoComplete="email"
                 required
                 autoFocus
               />
             </Form.Group>
-           
+
             <Form.Group className="mb-3">
               <Form.Label>Password</Form.Label>
               <Form.Control
@@ -98,9 +66,11 @@ const LoginForm = () => {
                 required
               />
             </Form.Group>
-            <Button id="btn-flotex"	type='submit' 
-            //  onSubmit={handleSubmit}
-             >
+            <Button
+              id="btn-flotex"
+              type="submit"
+              //  onSubmit={handleSubmit}
+            >
               Acceder
             </Button>
           </Form>
