@@ -6,11 +6,10 @@ import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link, NavLink } from "react-router-dom";
 import { Button, Col, Modal } from "react-bootstrap";
-import ModalLogin from "../views/modalLogin";
-
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Footer from "./footer";
 import LoginForm from "./Auth/Login/LoginForm";
+import { LocalStorageService } from "../services";
 
 const NavBarExample = () => {
   const [show, setShow] = useState(false);
@@ -21,6 +20,16 @@ const NavBarExample = () => {
     color: "red",
   };
   const [expanded, setExpanded] = useState(false);
+
+  const userExist = LocalStorageService.obtenerUsuario();
+
+  const user = LocalStorageService.obtenerUsuario();
+
+  const cerrarSesion = (e) => {
+    e.preventDefault();
+    LocalStorageService.removerAutorizacion(sessionStorage.removeItem);
+    window.location.href = "/";
+  };
   return (
     <>
       <Navbar
@@ -32,7 +41,10 @@ const NavBarExample = () => {
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
             <Row className="col-sm-10 col-md-4 col-lg-6 col-xl-4 col-xxl-3 animate__animated animate__swing">
-              <Image src="/img/logos/logo.png" className="responsive-logo-flotex" />
+              <Image
+                src="/img/logos/logo.png"
+                className="responsive-logo-flotex"
+              />
             </Row>
           </Navbar.Brand>
           <Navbar.Toggle
@@ -102,22 +114,41 @@ const NavBarExample = () => {
                 Consulta
               </NavLink>
             </Nav>
+
             <Nav
               className="m-auto my-2 my-lg-0"
               style={{ maxHeight: "120px" }}
               navbarScroll
             >
-              <a
-                id="nav-a-flotex"
-                
-                className={({ isActive }) =>
-                  isActive ? "bg-nav-flotex" : normalLink
-                }
-                onClick={() => handleShow()}
-              >
-                Iniciar Sesión
-              </a>
-
+              {userExist ? (
+                <>
+                  <a
+                    id="nav-a-flotex"
+                    className="text-uppercase"
+                  >
+                    {userExist}
+                  </a>
+                  <a
+                    id="nav-a-flotex"
+                    className={({ isActive }) =>
+                      isActive ? "bg-nav-flotex" : normalLink
+                    }
+                    onClick={cerrarSesion}
+                  >
+                    Cerrar Session
+                  </a>
+                </>
+              ) : (
+                <a
+                  id="nav-a-flotex"
+                  className={({ isActive }) =>
+                    isActive ? "bg-nav-flotex" : normalLink
+                  }
+                  onClick={() => handleShow()}
+                >
+                  Iniciar Sesión
+                </a>
+              )}
               <NavLink
                 id="nav-a-flotex"
                 as={Link}
@@ -165,7 +196,7 @@ const NavBarExample = () => {
           <Modal.Title>Ingresa tu Cuenta Flotex</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-         <LoginForm />
+          <LoginForm />
         </Modal.Body>
       </Modal>
     </>

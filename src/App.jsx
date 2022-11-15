@@ -1,13 +1,11 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import "./estilo.css";
 import "./estyle.scss";
-//importamos los comp creados
 import IntranetLogin from "./layouts/Auth/Intranet/IntranetLogin";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { AuthRoutes } from "./routers/AuthRouter";
 import AppRouter from "./routers/AppRouter";
-import PublicRouter from "./routers/PublicRoutes";
-import {PrivateRoutes, PrivateRutaAlmace} from "./routers/PrivateRoutes";
+import { PrivateRoutes, PrivateRutaAlmace } from "./routers/PrivateRoutes";
 import AlmacenRoutes from "./routers/AlmacenRouter";
 import { LocalStorageService } from "./services";
 import { NotFoundComponent } from "./components/NotFoundComponent";
@@ -32,13 +30,14 @@ const App = () => {
                 </PrivateRoutes>
               }
             />
-            <Route 
-            path="/almacen/*"
-            element={
-              <PrivateRutaAlmace perfil={perfil}>
-                <AlmacenRoutes />
-              </PrivateRutaAlmace>
-            } />
+            <Route
+              path="/almacen/*"
+              element={
+                <PrivateRutaAlmace perfil={perfil}>
+                  <AlmacenRoutes />
+                </PrivateRutaAlmace>
+              }
+            />
           </NotFoundComponent>
         </BrowserRouter>
       </div>

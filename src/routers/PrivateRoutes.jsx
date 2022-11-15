@@ -1,16 +1,10 @@
-
 import { Navigate } from "react-router-dom";
 
-
 export const PrivateRoutes = ({ children, perfil }) => {
+  return perfil === "Ventas" ? children : <Navigate replace to={"/"} />;
+};
 
-    return  perfil === "Ventas" ? children :  <Navigate replace to={'/'} />
-}
-
-
-
-export const PrivateRutaAlmace = ({children, perfil}) => {
-    return perfil === "Almacen" ? children : <Navigate replace to={'/'} />
-
-}
-export default {PrivateRoutes, PrivateRutaAlmace};
+export const PrivateRutaAlmace = ({ children, perfil }) => {
+  return perfil === "Almacen" ? children : <Navigate replace to={"/"} />;
+};
+export default { PrivateRoutes, PrivateRutaAlmace };
