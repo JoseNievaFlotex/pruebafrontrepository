@@ -7,14 +7,28 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <Container className="pt-5">
-        <Row >
+    <Container>
+    <Row >
+        <iframe className=""
+            frameBorder="0"
+            allowFullScreen="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            title="SLIDER CLADD NUEVO"
+            src="https://www.youtube.com/embed/YH9GumzL_jc?loop=1&amp;;autoplay=1&amp;;mute=1&amp;;controls=0&amp;;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=1"
+            id="widget2"
+            style={{ width: "3000px", height: "340px" }}
+          ></iframe>
+        </Row>
+
+    </Container>
+      <Container className="p-5">
+        <Row  className="d-flex justify-content-center">
         <iframe className="elementor video-responsive-flotex"
             frameBorder="0"
             allowFullScreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             title="SLIDER CLADD NUEVO"
-            src="https://www.youtube.com/embed/JXDahVfZY6U?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.cladd.com.ar&amp;widgetid=1"
+            src="https://www.youtube.com/embed/_Di_qloCUic?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=1"
             id="widget2"
             style={{ width: "1000px", height: "549px" }}
           ></iframe>
@@ -36,7 +50,7 @@ const About = () => {
             allowFullScreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             title="SLIDER CLADD NUEVO"
-            src="https://www.youtube.com/embed/9dU8k63hboI?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;origin=https%3A%2F%2Fwww.cladd.com.ar&amp;widgetid=1"
+            src="https://www.youtube.com/embed/tl1HrKo6HNM?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;rel=0&amp;playsinline=1&amp;enablejsapi=1&amp;widgetid=1"
             id="widget2"
             style={{ width: "1000px", height: "549px" }}
           ></iframe>
