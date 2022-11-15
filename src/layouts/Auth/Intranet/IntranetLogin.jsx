@@ -16,56 +16,49 @@ const IntranetLogin = () => {
         .required("Requerido"),
       password: Yup.string().required("Requerido"),
     }),
-    onSubmit: values => (values),
+    onSubmit: (values) => values,
   });
   return (
     <>
-    <div>
-    <Image src="/img/intranet/intra2.jpg" className="imagen-intranet"  />
+      <div>
+        <Image src="/img/intranet/intra2.jpg" className="imagen-intranet" />
 
-    <Container className="intranet">
-        <Row className="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-          
-                      <Form onSubmit={formik.handleSubmit}>
-                        <Image src="/img/logos/logointranet.png " className="logointranet"  />
-                        <Form.Group className="mb-3 p-2" controlId="formBasicEmail">
-                          <Form.Label className="text-white">Correo:</Form.Label>
-                          <Form.Control
-                            type="email"
-                            placeholder="Ejemplo@flotex.pe"
-                            name="email"
-                            
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.email}
-                          />
-                        </Form.Group>
-                        <Form.Group
-                          className="mb-3 p-2"
-                          controlId="formBasicPassword"
-                        >
-                          <Form.Label className="text-white">Contraseña:</Form.Label>
-                          <Form.Control
-                            type="password"
-                            placeholder="Contraseña"
-                            name="password"
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            value={formik.values.password}
-                          />
-                        </Form.Group>
-                        <Button
-                        id="btn-flotex"
-                          type="submit"
-                          className="col-sm-12"
-                        >
-                          Ingresar
-                        </Button>
-                      </Form>
-        </Row>
-      </Container>
-    </div>
-     
+        <Container className="intranet">
+          <Row className="col-sm-6 col-md-4 col-lg-4 col-xl-4">
+            <Form onSubmit={formik.handleSubmit}>
+              <Image
+                src="/img/logos/logointranet.png "
+                className="logointranet"
+              />
+              <Form.Group className="mb-3 p-2" controlId="formBasicEmail">
+                <Form.Label className="text-white">Correo:</Form.Label>
+                <Form.Control
+                  type="email"
+                  placeholder="Ejemplo@flotex.pe"
+                  name="email"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.email}
+                />
+              </Form.Group>
+              <Form.Group className="mb-3 p-2" controlId="formBasicPassword">
+                <Form.Label className="text-white">Contraseña:</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Contraseña"
+                  name="password"
+                  onChange={formik.handleChange}
+                  onBlur={formik.handleBlur}
+                  value={formik.values.password}
+                />
+              </Form.Group>
+              <Button id="btn-flotex" type="submit" className="col-sm-12">
+                Ingresar
+              </Button>
+            </Form>
+          </Row>
+        </Container>
+      </div>
     </>
   );
 };

@@ -1,14 +1,14 @@
-// import axios from "axios";
+import axios from "axios";
 
 
-// const api = axios.create({
-//     baseURL : "",
-//   });
+const api = axios.create({
+    baseURL : "https://api.apis.net.pe/v1/tipo-cambio-sunat",
+  });
 
 
   
-//   export const listarTipoCambio = async () => {
-//     const response = await api.get("");
-//     console.log(response);
-//     return response
-//   }
+  export const listarTipoCambio = async () => {
+    const response = await api.get("/v1/tipo-cambio-sunat");
+    console.log(response);
+    return response
+  }

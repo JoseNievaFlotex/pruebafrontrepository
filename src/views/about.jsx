@@ -7,9 +7,10 @@ import React from "react";
 const About = () => {
   return (
     <>
-    <Container>
-    <Row >
-        <iframe className=""
+      <Container>
+        <Row>
+          <iframe
+            className=""
             frameBorder="0"
             allowFullScreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -19,11 +20,11 @@ const About = () => {
             style={{ width: "3000px", height: "340px" }}
           ></iframe>
         </Row>
-
-    </Container>
+      </Container>
       <Container className="p-5">
-        <Row  className="d-flex justify-content-center">
-        <iframe className="elementor video-responsive-flotex"
+        <Row className="d-flex justify-content-center">
+          <iframe
+            className="elementor video-responsive-flotex"
             frameBorder="0"
             allowFullScreen="1"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -35,10 +36,18 @@ const About = () => {
         </Row>
       </Container>
       <Container className="text-center">
-        <Row >
-          <h1 > FLOTEX</h1>
-          <p >
-          El Grupo, compuesto por las empresas Flotex, actúa en diferentes segmentos del mercado textil y es hoy uno de los más grandes y completos del Perú. Cada marca tiene las características necesarias para atender cada mercado de manera personalizada. Juntos, el grupo ofrece productos de alta calidad, importados y nacionales, que atienden tanto al mercado de la moda como al de la decoración. Un equipo capacitado de representantes atiende a clientes en todo el territorio nacional, ofreciendo el mejor mix de productos para cada región.
+        <Row>
+          <h1> FLOTEX</h1>
+          <p>
+            El Grupo, compuesto por las empresas Flotex, actúa en diferentes
+            segmentos del mercado textil y es hoy uno de los más grandes y
+            completos del Perú. Cada marca tiene las características necesarias
+            para atender cada mercado de manera personalizada. Juntos, el grupo
+            ofrece productos de alta calidad, importados y nacionales, que
+            atienden tanto al mercado de la moda como al de la decoración. Un
+            equipo capacitado de representantes atiende a clientes en todo el
+            territorio nacional, ofreciendo el mejor mix de productos para cada
+            región.
           </p>
         </Row>
       </Container>
@@ -94,7 +103,6 @@ const About = () => {
           </Col>
         </Row>
       </Container>
-      
     </>
   );
 };

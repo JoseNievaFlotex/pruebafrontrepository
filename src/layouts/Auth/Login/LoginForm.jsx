@@ -6,20 +6,21 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import useLogin from "./useLogin";
-import * as Yup from 'yup';
+import * as Yup from "yup";
 import { toastme } from "toastmejs";
 
 const LoginForm = () => {
-  const {setCredentials} = useLogin();
+  const { setCredentials } = useLogin();
 
   const formik = useFormik({
     initialValues: { email: "", password: "" },
     validationSchema: Yup.object({
-			email: Yup.string().email('Email invalido').required('Requerido'),
-			password: Yup.string().required('Requerido'),
-		}),
-    onSubmit: values => setCredentials(values),
-    
+      email: Yup.string()
+        .email("Email invalido")
+        .required("Requerido"),
+      password: Yup.string().required("Requerido"),
+    }),
+    onSubmit: (values) => setCredentials(values),
   });
 
   return (
@@ -40,11 +41,11 @@ const LoginForm = () => {
                 required
                 autoFocus
               />
-            <Form.Text className='text-danger'>
-					{formik.touched.email && formik.errors.email
-						? formik.errors.email
-						: ''}
-				</Form.Text>
+              <Form.Text className="text-danger">
+                {formik.touched.email && formik.errors.email
+                  ? formik.errors.email
+                  : ""}
+              </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3">
               <Form.Label>Password</Form.Label>
@@ -57,17 +58,14 @@ const LoginForm = () => {
                 placeholder="Contraseña"
                 required
               />
-              <Form.Text className=' text-danger'>
-					{formik.touched.password && toastme.warning(formik.errors.password)
-						? formik.errors.password
-						: ''}
-				</Form.Text>
+              <Form.Text className=" text-danger">
+                {formik.touched.password &&
+                toastme.warning(formik.errors.password)
+                  ? formik.errors.password
+                  : ""}
+              </Form.Text>
             </Form.Group>
-            <Button
-              id="btn-flotex"
-              type="submit"
-              className='rounded-pill'
-            >
+            <Button id="btn-flotex" type="submit" className="rounded-pill">
               Acceder
             </Button>
           </Form>

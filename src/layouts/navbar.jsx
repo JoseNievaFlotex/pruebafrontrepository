@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { Button, Col, Modal } from "react-bootstrap";
+import { Col, Modal } from "react-bootstrap";
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Footer from "./footer";
 import LoginForm from "./Auth/Login/LoginForm";
@@ -23,7 +23,7 @@ const NavBarExample = () => {
 
   const userExist = LocalStorageService.obtenerUsuario();
 
-  const user = LocalStorageService.obtenerUsuario();
+ 
 
   const cerrarSesion = (e) => {
     e.preventDefault();
@@ -122,13 +122,10 @@ const NavBarExample = () => {
             >
               {userExist ? (
                 <>
-                  <a
-                    id="nav-a-flotex"
-                    className="text-uppercase"
-                  >
+                  <p id="nav-a-flotex" className="text-uppercase">
                     {userExist}
-                  </a>
-                  <a
+                  </p>
+                  <a href="/"
                     id="nav-a-flotex"
                     className={({ isActive }) =>
                       isActive ? "bg-nav-flotex" : normalLink

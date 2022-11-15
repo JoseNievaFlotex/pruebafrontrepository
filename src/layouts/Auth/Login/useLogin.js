@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useQuery } from "react-query";
 import { AuthService, LocalStorageService } from "../../../services";
 import { toastme } from "toastmejs";
-import AppRouter from "../../../routers/AppRouter";
 
 const useLogin = () => {
   const [credentials, setCredentials] = useState(null);
@@ -11,20 +10,18 @@ const useLogin = () => {
     AuthService.loginUser(credentials)
   );
 
-//   useEffect(() => {
-//     if (credentials) refetch();
-//   }, [credentials]);
+  //   useEffect(() => {
+  //     if (credentials) refetch();
+  //   }, [credentials]);
 
   if (data) {
     toastme.success(`Bienvenido al Sistema ${data.user.name}`);
     LocalStorageService.guardarAutorizacion(data);
   }
 
-    if(perfil === "Ventas")
-    {
-        window.location.href = "ventas/dash";
-    }
-
+  if (perfil === "Ventas") {
+    window.location.href = "ventas/dash";
+  }
 
   if (perfil === "Importaciones") {
     window.location.href = "/about";
