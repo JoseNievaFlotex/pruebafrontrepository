@@ -4,8 +4,7 @@ export const guardarAutorizacion= data => {
     sessionStorage.setItem(ALMACENAMIENTO_DE_AUTORIZACION, JSON.stringify(data));
     sessionStorage.setItem('typeuser', data?.user?.typeuser);
     sessionStorage.setItem('name', data?.user?.name);
-    // sessionStorage.setItem('token', data?.token);
-    // console.log( data?.user.name,);
+    sessionStorage.setItem('estado', data?.user?.estado);
 }
 
 export const obtenerTokenAcceso = () => {
@@ -19,3 +18,16 @@ export const obtenerTokenAcceso = () => {
 
     throw new Error('Se requiere iniciar sesión');
 };
+
+export const removerAutorizacion = () => {
+    sessionStorage.removeItem(ALMACENAMIENTO_DE_AUTORIZACION);
+};
+
+export const obtenerPerfil = () => {
+    const perfil = sessionStorage.getItem('typeuser');
+    return perfil;
+}
+export const obtenerEstado = () => {
+    const stateUser = sessionStorage.getItem('estado');
+    return stateUser;
+}

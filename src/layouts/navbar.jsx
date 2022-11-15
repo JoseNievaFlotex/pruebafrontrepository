@@ -5,14 +5,18 @@ import Nav from "react-bootstrap/Nav";
 import Row from "react-bootstrap/Row";
 import Navbar from "react-bootstrap/Navbar";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { Col } from "react-bootstrap";
+import { Button, Col, Modal } from "react-bootstrap";
 import ModalLogin from "../views/modalLogin";
 
 import { FloatingWhatsApp } from "react-floating-whatsapp";
 import Footer from "./footer";
+import LoginForm from "./Auth/Login/LoginForm";
 
 const NavBarExample = () => {
-  const [modalLoginShow, setModalLoginShow] = useState(false);
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const normalLink = {
     color: "red",
   };
@@ -75,17 +79,6 @@ const NavBarExample = () => {
               >
                 Galleria
               </NavLink>
-
-              {/* <NavLink
-                id="nav-a-flotex"
-                as={Link}
-                to="/team"
-                className={({ isActive }) =>
-                  isActive ? "bg-nav-flotex" : normalLink
-                }
-              >
-                Equipo
-              </NavLink> */}
               <NavLink
                 onClick={() => setExpanded(false)}
                 id="nav-a-flotex"
@@ -114,17 +107,16 @@ const NavBarExample = () => {
               style={{ maxHeight: "120px" }}
               navbarScroll
             >
-              <NavLink
+              <a
                 id="nav-a-flotex"
-                as={Link}
-                to="/login"
+                
                 className={({ isActive }) =>
                   isActive ? "bg-nav-flotex" : normalLink
                 }
-                onClick={() => setModalLoginShow(true)}
+                onClick={() => handleShow()}
               >
                 Iniciar Sesión
-              </NavLink>
+              </a>
 
               <NavLink
                 id="nav-a-flotex"
@@ -144,17 +136,17 @@ const NavBarExample = () => {
         <Outlet></Outlet>
       </section>
 
-      <ModalLogin
+      {/* <ModalLogin
         show={modalLoginShow}
         onHide={() => setModalLoginShow(false)}
-      />
+      /> */}
 
       <Col>
         <FloatingWhatsApp
           accountName="Flotex"
           chatMessage="Hola te saluda Flotex 😊
                         en que podemos ayudarte"
-          placeholder="Escribe un mensaje"
+          placeholder="Dejanos un mensaje"
           avatar="/img/logos/Icono-circular.png"
           statusMessage=""
           phoneNumber="+51 936846098"
@@ -162,6 +154,20 @@ const NavBarExample = () => {
       </Col>
 
       <Footer />
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Ingresa tu Cuenta Flotex</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+         <LoginForm />
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

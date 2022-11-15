@@ -3,10 +3,13 @@ import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
 import { Col, Container, Row } from "react-bootstrap";
 
+
+
 const Home = () => {
+
   return (
     <>
-      <Carousel variant="dark">
+      <Carousel variant="dark" >
         <Carousel.Item>
           <Image
             className=" w-100"
