@@ -7,26 +7,39 @@ import { QueryClient, QueryClientProvider } from "react-query";
 import { AuthRoutes } from "./routers/AuthRouter";
 import AppRouter from "./routers/AppRouter";
 import PublicRouter from "./routers/PublicRoutes";
-import PrivateRoutes from "./routers/PrivateRoutes";
+import {PrivateRoutes, PrivateRutaAlmace} from "./routers/PrivateRoutes";
 import AlmacenRoutes from "./routers/AlmacenRouter";
+import { LocalStorageService } from "./services";
+import { NotFoundComponent } from "./components/NotFoundComponent";
 
 const queryClient = new QueryClient();
 
 const App = () => {
+  const perfil = LocalStorageService.obtenerPerfil();
+
   return (
     <QueryClientProvider client={queryClient}>
       <div className="App">
         <BrowserRouter>
-          <Routes>
+          <NotFoundComponent>
             <Route path="/*" element={<AuthRoutes />} />
             <Route path="intranet" element={<IntranetLogin />} />
-          </Routes>
-          <Routes>
-            <Route path="/ventas/*" element={<AppRouter />} />
-          </Routes>
-          <Routes>
-            <Route path="/almacen/*" element={<AlmacenRoutes />} />
-          </Routes>
+            <Route
+              path="/ventas/*"
+              element={
+                <PrivateRoutes perfil={perfil}>
+                  <AppRouter />
+                </PrivateRoutes>
+              }
+            />
+            <Route 
+            path="/almacen/*"
+            element={
+              <PrivateRutaAlmace perfil={perfil}>
+                <AlmacenRoutes />
+              </PrivateRutaAlmace>
+            } />
+          </NotFoundComponent>
         </BrowserRouter>
       </div>
     </QueryClientProvider>

@@ -1,13 +1,14 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
+import { NotFoundComponent } from "../components/NotFoundComponent";
 import Index from '../views/Almacen/index';
 
 const AlmacenRoutes = () => {
     return(
-        <Routes>
+        <NotFoundComponent>
             <Route path={'/dashboard'} element={<Index />} />
             <Route path="*" element={<Navigate replace to="/almacen/dashboard" />} />
-        </Routes>
+        </NotFoundComponent>
     )
 }
 
