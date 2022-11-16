@@ -1,6 +1,9 @@
-import React from 'react'
-import { Col, Container, Nav, Row } from 'react-bootstrap'
-import { Link, Outlet, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Col, Container, Nav, Row } from 'react-bootstrap';
+import { Link, Outlet, NavLink } from 'react-router-dom';
+import SidebarMenu from 'react-bootstrap-sidebar-menu';
+
+
 
 const Sidebar = ({children}) => {
 
@@ -24,19 +27,28 @@ const Sidebar = ({children}) => {
 
   return (
 
-        <><Row>
-          <h1>User</h1>
-  
-          {menuItem.map((item, index) => (
-              <NavLink to={item.path} key={index}
-                    as={Link}
-                  className="link">
-                  <a>{item.icon}</a>
-                  <a>{item.name}</a>
-              </NavLink>
-          ))}
+        <><Row className='bg-slider-flotex-dash'>
+            <SidebarMenu >
+                <h1>User</h1>
+                <div className='hoda'>
+                    {menuItem.map((item, index) => (
+                        <NavLink to={item.path} key={index}
+                                as={Link}
+                            className="link">
+                            <a>{item.icon}</a>
+                            <a>{item.name}</a>
+                        </NavLink>
+                    ))}
 
-          <main>{children}</main>
+                </div>
+                <div className='new-div'>
+
+                    <main className='div-dos-new'>{children}</main>
+                </div>
+            </SidebarMenu>
+
+            
+            
           </Row>
           <Outlet />
             </>
