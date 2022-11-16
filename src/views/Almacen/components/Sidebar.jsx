@@ -1,6 +1,7 @@
 import React from 'react'
 import { Col, Container, Nav, Row } from 'react-bootstrap'
 import { Link, Outlet, NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sidebar = ({children}) => {
 
@@ -8,7 +9,7 @@ const Sidebar = ({children}) => {
         {
             path:"/almacen/dashboard",
             name:"Dashboard",
-            icon: "",
+            icon: <FontAwesomeIcon icon='fas fa-eye' />,
         },
         {
             path:"/almacen/analisis",
@@ -23,11 +24,16 @@ const Sidebar = ({children}) => {
     ]
 
   return (
-
-        <><Row>
-          <h1>User</h1>
-  
-          {menuItem.map((item, index) => (
+    <>
+    <div className='contenedor'>
+        <div className='sidebar'>
+            <div className='top_section'>
+                <h1>User</h1>  
+                <div className='barra'>
+                    <FontAwesomeIcon  />
+                </div>
+            </div>
+            {menuItem.map((item, index) => (
               <NavLink to={item.path} key={index}
                     as={Link}
                   className="link">
@@ -35,10 +41,10 @@ const Sidebar = ({children}) => {
                   <a>{item.name}</a>
               </NavLink>
           ))}
-
-          <main>{children}</main>
-          </Row>
+        </div>
+    <main>{children}</main>
           <Outlet />
+    </div>
             </>
   )
 }

@@ -925,5 +925,24 @@ p {
   color: #0F406F !important;
 }
 
-/*  */
+/* Dashboard */
+
+.contenedor{
+  display: flex;
+
+}
+.main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  background: #ffff00;
+  color: #000;
+  height: 100vh;
+}
+.link{
+  display: flex;
+  align-items: center;
+}
+
 
