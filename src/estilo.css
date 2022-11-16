@@ -29,7 +29,10 @@
 }
 .tejido {
   display: flex;
-  margin: 50px;
+  margin: 20px;
+  padding: 60px;
+  justify-content: flex-start;
+  font-size: 40px;
   align-items: center;
   text-align: center;
 }
@@ -711,15 +714,94 @@ p {
   .footer-logo img{
     width: 150px !important;
   }
+  /* */
+ 
+}
+
+
+/*telas universe */
+.telasuniverse{
+  height: 24rem;
+}
+@media only screen and (max-width: 37.5rem) {
+  .telasuniverse{
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 62rem) {
+  .telasuniverse{
+    height: 19rem;
+  }
+}
+
+/* carrusel */
+
+.carusel{
+  width: 100vw;
+  height: 35rem;
+}
+@media only screen and (max-width: 600px) {
+  .carusel{
+    width: 100vh;
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .carusel{
+    width: 100vw;
+    height: 24em;
+  }
+}
+/* cottom */
+@media (max-width: 500px) {
   .cotton-text-flex{
-    justify-content: center !important;
-    align-items: center !important;
+
+
+  }
+
+  .img-cotton-responsive{
+    height: 18.75rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .cotton-text-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .cotton-text-flex p{
-    text-align: center;
+    font-size: .3125rem;
+    word-spacing: 4px;
+    color: #0F406F;
+    margin: 3px;
+    padding: 5px;
   }
   .img-cotton-responsive{
-    height: 320px !important;
+    height: 25rem !important;
+  }
+}
+
+@media landscape {
+  
+  
+  .cotton-text-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
+  }
+  
+  .cotton-text-flex p{
+    font-size: 10px;
+    word-spacing: 4px;
+    color: #0F406F;
+    margin: 10px;
+    padding: 10px;
+    white-space: pre-line;
+    /* text-shadow: 2px 1px 5px; */
+  }
+  .img-cotton-responsive{
+    height: 21rem !important;
   }
 }
 
@@ -727,15 +809,21 @@ p {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  justify-content: space-evenly;
+ 
 }
 
 .cotton-text-flex p{
   max-width: 315px;
-  font-size: 28px;
-
+  font-size: 25px;
+  word-spacing: 4px;
   color: #0F406F;
+  margin: 10px;
+  padding: 20px;
+  white-space: pre-line;
   /* text-shadow: 2px 1px 5px; */
+}
+.img-cotton-responsive{
+  height: 30rem !important;
 }
 
 /*VIDEO*/
@@ -891,30 +979,11 @@ p {
   background-color: #0F406F;
 }
 /* */ 
-@media (min-width: 300px) {
-  .pruebadeface{
-    height: 300px;
-  
-}
-}
-@media (min-width: 900px) {
-  .pruebadeface{
-    height: 500px;
-  
-}
-}
 
-@media only screen and (orientation: landscape){
-  .pruebadeface{
-    height: 800px;
-  
-}
-
-}
 
 .pruebadeface{
-  height: 680px;
-  width: 620px;
+  height: 42.5rem;
+  width: 38.75rem;
   border-radius: 7px;
   box-shadow: 1px 2px 8px -1px;
   padding: 0 !important;
@@ -932,8 +1001,8 @@ p {
 
 }
 .main{
-  width: 100%;
-  padding: 20px;
+  width: 100vh;
+  padding: 60px;
 }
 .sidebar{
   background: #ffff00;
@@ -946,3 +1015,11 @@ p {
 }
 
 
+/* */
+
+.pruebacard
+{
+  display: flex;
+  padding: 50px;
+  padding-left: 500px;
+}

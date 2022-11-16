@@ -13,52 +13,62 @@ const Home = () => {
       <Carousel variant="dark">
         <Carousel.Item>
           <Image
-            className=" w-100"
+            className="carusel"
             src="/img/banner/banner-1.png"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            className=" w-100"
+            className="carusel"
             src="/img/banner/banner-5.jpg"
             alt="First slide"
           />
         </Carousel.Item>
         <Carousel.Item>
           <Image
-            className=" w-100"
+            className="carusel"
             src="/img/banner/banner-6.jpg"
             alt="First slide"
           />
         </Carousel.Item>
       </Carousel>
-      <Container className="p-4 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
-        <Row className="col-sm-8">
+      <Container className="p-2 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
+        <Row className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
           <h3 className="letter text-color-flotex">LÍNEA SOSTENIBLE</h3>
-          <Image src="/img/flotexgreen/flotex-green.jpg" />
+          <Image src="/img/flotexgreen/flotex-green.jpg" className="telasuniverse"/>
         </Row>
       </Container>
-      <Container className="d-flex justify-content-center p-2 ">
+      <Container className="p-2 d-flex justify-content-center animate__animated animate__backInLeft animate__delay demo-top-flotex">
+        <Row>
+        <Row className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
+          <Image src="/img/flotexgreen/VP1.jpg" className="telasuniverse"/>
+        </Row>
+        <Col className="col-sm-6 col-md-2 col-lg-2 col-xl-2">
+          <h3 className="tejido text-color-flotex">TU UNIVERSO EN TELAS</h3>
+        </Col>
+        </Row>
+      </Container>
+      {/* <Container className="d-flex justify-content-center p-2 ">
         <Row className="col-12 justify-content-center animate__animated animate__backInUp animate__delay-1s demo-top-flotex">
-          <div className="col-sm-8 row">
+          <Row className="col-sm-8">
             <Image
               src="/img/flotexgreen/VP1.jpg"
               className=" img-responsive-unoverso"
             />
-          </div>
+          </Row>
           <Col className="col-sm-2">
             <h3 className="tejido text-color-flotex"> TU UNIVERSO EN TELAS</h3>
           </Col>
         </Row>
-      </Container>
-      <Container className="d-flex justify-content-center pt-5 pb-3">
+      </Container> */}
+      <Container className="d-flex justify-content-center  ">
         <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center">
-          <Col className="texto-public cotton-text-flex">
-            <p className="text-center">
+          <Col className=" cotton-text-flex">
+            <p className="">
               Tela de alta Calidad, el bordado le añade textura a la superficie.
             </p>
-            <p className="text-right p-2">Es rígida, ligera y resistente.</p>
+            <p className="">Es rígida, ligera y resistente.</p>
             <p className="">
               Perfecta para confeccionar blusas, camisas, faldas, pantalones y
               vestidos.
@@ -73,34 +83,63 @@ const Home = () => {
         </Row>
       </Container>
       <h2 className="text-center m-4 text-color-flotex">PROMOCIONES</h2>
-      <Container className="galleria col-sm-8 col-md-8 col-lg-8">
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/Ribest2.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/cataniace1.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/linoest1.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/chalisest2.png" className="efecto" />
-        </Row>
-      </Container>
-      <Container className="galleria col-sm-8 col-md-8 col-lg-8">
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/chambrayest1.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/interlock1.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/loma2.png" className="efecto" />
-        </Row>
-        <Row className="col-sm-4 p-1">
-          <Image src="/img/telas/chambrayest2.png" className="efecto" />
-        </Row>
-      </Container>
+      <Row className="animate__animated animate__backInUp animate__delay-1s">
+        <Container className=" col-sm-12 col-md-12 col-lg-12">
+          <Row className="col-sm-12 p-1">
+            <div className="col-lg-3 col-sm-6 p-0 div-img-flotex-galery">
+              <Image
+                src="/img/telas/Ribest2.png"
+                className="img-flotex-galery"
+              />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image
+                src="/img/telas/cataniace1.png"
+                className="img-flotex-galery"
+              />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image
+                src="/img/telas/linoest1.png"
+                className="img-flotex-galery"
+              />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image
+                src="/img/telas/chalisest2.png"
+                className="img-flotex-galery"
+              />
+            </div>
+          </Row>
+        </Container>
+      </Row>
+      <Row className="animate__animated animate__backInUp animate__delay-1s">
+        <Container className=" col-sm-12 col-md-12 col-lg-12">
+          <Row className="col-sm-12 p-1">
+            <div className="col-lg-3 col-sm-6 p-0 div-img-flotex-galery">
+              <Image
+                src="/img/telas/chambrayest1.png"
+                className="img-flotex-galery"
+              />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image
+                src="/img/telas/interlock1.png"
+                className="img-flotex-galery"
+              />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image src="/img/telas/loma2.png" className="img-flotex-galery" />
+            </div>
+            <div className="col-lg-3 col-sm-6 p-0">
+              <Image
+                src="/img/telas/chambrayest2.png"
+                className="img-flotex-galery"
+              />
+            </div>
+          </Row>
+        </Container>
+      </Row>
     </>
   );
 };

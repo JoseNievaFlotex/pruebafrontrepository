@@ -37,8 +37,8 @@ const Sidebar = ({children}) => {
               <NavLink to={item.path} key={index}
                     as={Link}
                   className="link">
-                  <a>{item.icon}</a>
-                  <a>{item.name}</a>
+                  <p>{item.icon}</p>
+                  <p>{item.name}</p>
               </NavLink>
           ))}
         </div>
