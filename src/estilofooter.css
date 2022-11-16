@@ -1,0 +1,164 @@
+
+  /* mobile */
+  @media only screen and (max-width: 600px) {
+	/*carrusel */
+	.carusel {
+	  width: 100vh;
+	  height: 18rem;
+	}
+  
+	/*telas universe */
+	.telasuniverse {
+	  height: 15rem;
+	}
+	.tejido {
+	  display: flex;
+	  padding: 20px;
+	  justify-content: center;
+	  font-size: 30px;
+	  text-align: center;
+	  align-items: center;
+	}
+  
+	/* cottom */
+	.cotton-text-flex {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	}
+	.cotton-text-flex p {
+	  font-size: 20px;
+	  word-spacing: 4px;
+	  color: #0f406f;
+	  margin: 3px;
+	  padding: 5px;
+	}
+	.img-cotton-responsive {
+	  height: 20rem !important;
+	}
+	/* Promociones*/
+	.img-flotex-galery {
+	  transition: 0.5s;
+	
+	  transition: 0.5s;
+	  width: 1s;
+	  height: 1s;
+	  transform: 2s;
+	
+	  width: 100%;
+	  height: 100%;
+	}
+  }
+  
+  
+  
+  /*tablet y deskptop */
+  @media only screen and (min-width: 600px) and (max-width: 991px) {
+	/*carrusel */
+	.carusel {
+	  width: 100vw;
+	  height: 20rem;
+	}
+	/*telas universe */
+	.telasuniverse {
+	  height: 19rem;
+	}
+	.tejido {
+	  display: flex;
+	  margin: 20px;
+	  padding: 30px;
+	  justify-content: center;
+	  font-size: 30px;
+	  align-items: center;
+	  text-align: center;
+	}
+	/* cottom */
+	.cotton-text-flex {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	}
+	.cotton-text-flex p {
+	  font-size: 20px;
+	  word-spacing: 4px;
+	  color: #0f406f;
+	  margin: 3px;
+	  padding: 5px;
+	}
+	.img-cotton-responsive {
+	  height: 25rem !important;
+	}
+	/* Promociones*/
+	.img-flotex-galery {
+	  transition: 0.5s;
+	
+	  transition: 0.5s;
+	  width: 1s;
+	  height: 1s;
+	  transform: 2s;
+	
+	  width: 100%;
+	  height: 100%;
+	}
+  }
+  
+  
+   /* pantalla ancha*/
+  @media only screen and (min-width: 991px) and (max-width: 100vw) {
+	/*carrusel */
+	.carusel {
+	  width: 100vw;
+	  height: 35rem;
+	}
+	/* cottom */
+	cotton-text-flex{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	 
+	}
+	.tejido {
+	  display: flex;
+	  margin: 20px;
+	  padding: 60px;
+	  justify-content: flex-start;
+	  font-size: 40px;
+	  align-items: center;
+	  text-align: center;
+	}
+	
+	
+  .cotton-text-flex{
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	 
+	}
+	
+	.cotton-text-flex p{
+	  max-width: 315px;
+	  font-size: 25px;
+	  word-spacing: 4px;
+	  color: #0F406F;
+	  margin: 10px;
+	  padding: 20px;
+	  white-space: pre-line;
+	  /* text-shadow: 2px 1px 5px; */
+	}
+	.img-cotton-responsive{
+	  height: 35rem !important;
+	}
+	/* Promociones*/
+	.img-flotex-galery {
+	  transition: 0.5s;
+	
+	  transition: 0.5s;
+	  width: 1s;
+	  height: 1s;
+	  transform: 2s;
+	
+	  width: 100%;
+	  height: 100%;
+	}
+  }
+  

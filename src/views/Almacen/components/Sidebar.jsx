@@ -39,7 +39,9 @@ const Sidebar = ({children}) => {
               <NavLink to={item.path} key={index}
                     as={Link}
                   className="link">
+
                   <p className='pe-2'>{item.icon}</p>
+
                   <p>{item.name}</p>
               </NavLink>
           ))}

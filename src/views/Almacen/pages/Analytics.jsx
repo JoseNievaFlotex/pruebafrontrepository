@@ -11,7 +11,6 @@ import Card from 'react-bootstrap/Card';
         'Danger',
         'Warning',
         
-
       ].map((variant) => (
         <Card
           bg={variant.toLowerCase()}
