@@ -3,7 +3,11 @@ import Image from "react-bootstrap/Image";
 import Carousel from "react-bootstrap/Carousel";
 import { Col, Container, Row } from "react-bootstrap";
 
+import useGetTipoCambio from "./useGetTipoCambio";
+
 const Home = () => {
+  const { data: listado } = useGetTipoCambio();
+  console.log(listado);
   return (
     <>
       <Carousel variant="dark">

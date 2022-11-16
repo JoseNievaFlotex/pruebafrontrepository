@@ -141,26 +141,31 @@
   width: 20px;
   height: 20px;
 }
-
-.intra {
-  display: flex;
-  justify-content: center;
-  padding: 300px;
+/* */
+.imagen-intranet{
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
-.login {
-  min-height: 100vh;
+.intranet {
+position: absolute;
+top: 40%;
+left: 40%;
 }
 
-.bg-image {
-  background-image: url("https://source.unsplash.com/WEQbe2jBg40/600x1200");
-  background-size: cover;
-  background-position: center;
+.logointranet {
+  width: 450px;
+  height: 100px;
+}
+@media (min-width: 300) {
+  .logointranet {
+    width: 100px;
+    height: 50px;
+  }
 }
 
-.login-heading {
-  font-weight: 300;
-}
+
 
 .btn-login {
   font-size: 0.9rem;
@@ -168,6 +173,7 @@
   padding: 0.75rem 1rem;
 }
 
+/* */
 .footer-widget p {
   margin-bottom: 27px;
 }
@@ -881,7 +887,7 @@ p {
   
   .responsive-logo-flotex
   {
-    height: 50px;
+    height: 40px;
   }
   
 }

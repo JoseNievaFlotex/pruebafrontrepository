@@ -1,23 +1,37 @@
-import { useEffect, useState } from "react"
+import { useState } from "react";
 import { useQuery } from "react-query";
-import {AuthService, LocalStorageService} from "../../../services"
+import { AuthService, LocalStorageService } from "../../../services";
+import { toastme } from "toastmejs";
 
 const useLogin = () => {
-    const [credentials, setCredentials]= useState(null);
+  const [credentials, setCredentials] = useState(null);
+  const perfil = LocalStorageService.obtenerPerfil();
+  const { data, refetch } = useQuery(["login", credentials], () =>
+    AuthService.loginUser(credentials)
+  );
 
-    const {data, isLoading, refetch} = useQuery(
-        ["login", credentials],
-        () => AuthService.loginUser(credentials)
-    );
+  //   useEffect(() => {
+  //     if (credentials) refetch();
+  //   }, [credentials]);
 
-    useEffect(() => {
-        if(credentials) refetch();
-    }, [credentials]);
-    if(data){
-        LocalStorageService.guardarAutorizacion(data);
-        // eslint-disable-next-line no-restricted-globals
-        location.href = '/about';
-    }
-    return {setCredentials};
+  if (data) {
+    toastme.success(`Bienvenido al Sistema ${data.user.name}`);
+    LocalStorageService.guardarAutorizacion(data);
+  }
+
+  if (perfil === "Ventas") {
+    window.location.href = "ventas/dash";
+  }
+
+  if (perfil === "Importaciones") {
+    window.location.href = "/about";
+  }
+  if (perfil === "Almacen") {
+    window.location.href = "/almacen/";
+  }
+  if (perfil === "Admin") {
+    window.location.href = "/about";
+  }
+  return { setCredentials };
 };
 export default useLogin;

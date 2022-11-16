@@ -113,7 +113,7 @@ const Footer = () => {
               <Image className="fotter-logo" src="/img/logos/logodorado.png" />
               <span>
                 {" "}
-                | &copy; Copyright 2022, Todos Los Derechos Reservados
+                | &copy; Copyright {new Date().getFullYear()}{" "}, Todos Los Derechos Reservados
               </span>
             </div>
           </Row>
