@@ -932,7 +932,26 @@ p {
   color: #0F406F !important;
 }
 
-/*  */
+/* Dashboard */
+
+.contenedor{
+  display: flex;
+
+}
+.main{
+  width: 100%;
+  padding: 20px;
+}
+.sidebar{
+  /* background: #ffff00; */
+  color: #000;
+  height: 100vh;
+}
+.link{
+  display: flex;
+  align-items: center;
+}
+
 
 /* DashBoard Style */
 
@@ -949,4 +968,42 @@ p {
   box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
   box-shadow: 0px 0px 35px 0px rgb(154 161 171 / 15%);
 }
+.content-page{
+  margin-left: 260px;
+  overflow: hidden;
+  padding: 70px 0 65px;
+  min-height: 100vh;
+}
+
+.link.active{
+  color: white;
+  font-size: .89rem;
+  outline: none!important;
+
+  text-decoration: none;
+}
+.link{
+  color: #8391a2;
+  font-size: .89rem;
+  outline: none!important;
+
+  text-decoration: none;
+  padding: 12px 30px;
+}
+
+body[data-leftbar-theme=dark]{
+  --ct-dark-menu-item-hover: #fa5c7c;
+}
+.link:hover{
+  color: #fa5c7c;
+}
+
+.bg-siderbar-flotex{
+  background-color: #f0f1f4fc;
+}
+.top_section h1{
+  font-size: 30px;
+}
+/*/DOS/*/
+
 /* Fin DashBoard Style */

@@ -29,7 +29,7 @@ const LoginForm = () => {
         <Col>
           <Form to="#" onSubmit={formik.handleSubmit}>
             <Form.Group className="mb-3">
-              <Form.Label>Nombre Usuario</Form.Label>
+              <Form.Label>Correo:</Form.Label>
               <Form.Control
                 type="email"
                 name="email"
@@ -48,7 +48,7 @@ const LoginForm = () => {
               </Form.Text>
             </Form.Group>
             <Form.Group className="mb-3">
-              <Form.Label>Password</Form.Label>
+              <Form.Label>Contraseña:</Form.Label>
               <Form.Control
                 type="password"
                 name="password"
