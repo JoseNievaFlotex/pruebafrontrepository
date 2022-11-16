@@ -27,7 +27,7 @@ const useLogin = () => {
     window.location.href = "/about";
   }
   if (perfil === "Almacen") {
-    window.location.href = "/almacen/dashboard";
+    window.location.href = "/almacen/";
   }
   if (perfil === "Admin") {
     window.location.href = "/about";

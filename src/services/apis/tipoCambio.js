@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 const api = axios.create({
-    baseURL : "https://api.apis.net.pe/v1/tipo-cambio-sunat",
+    baseURL : "https://api.apis.net.pe",
   });
 
 
