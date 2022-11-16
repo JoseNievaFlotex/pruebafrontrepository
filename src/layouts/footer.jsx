@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
-import { Button, Form, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 const Footer = () => {
   return (
     <footer id="dk-footer" className="dk-footer">

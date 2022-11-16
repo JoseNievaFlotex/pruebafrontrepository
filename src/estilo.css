@@ -671,6 +671,13 @@ p {
 .carousel-indicators {
   visibility: hidden !important;
 }
+@media (max-width: 992px){
+  .dk-footer-box-info{
+    position: initial;
+    padding: 24px 48px;
+    /* padding: 20px 50px; */
+  }
+}
 @media (max-width: 600px) {
   .contact-flotex-responsive{
     flex-direction: column;
