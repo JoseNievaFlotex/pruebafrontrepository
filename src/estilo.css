@@ -736,22 +736,6 @@ p {
 
 /* carrusel */
 
-.carusel{
-  width: 100vw;
-  height: 35rem;
-}
-@media only screen and (max-width: 600px) {
-  .carusel{
-    width: 100vh;
-    height: 12rem;
-  }
-}
-@media only screen and (max-width: 992px) {
-  .carusel{
-    width: 100vw;
-    height: 24em;
-  }
-}
 /* cottom */
 @media (max-width: 500px) {
   .cotton-text-flex{
