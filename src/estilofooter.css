@@ -90,14 +90,7 @@
   }
   /* gallery */
   .contenedor-bg-flotex-gallery {
-    background-image: url(https://adar.com.br/wp-content/uploads/2020/01/Engage-Adar-Bom-Retiro-7630.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  
-    height: 200px;
-    width: 100vw;
+    display: none;
   }
   .showroom-text {
     color: #7b7474;
