@@ -35,12 +35,12 @@ const NavBarExample = () => {
       <Navbar
         expanded={expanded}
         expand="lg"
-        bg="light"
+        bg="white"
         className="menu-navbar-flotex"
       >
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-12 col-md-4 col-lg-10 col-xl-4 col-xxl-4 animate__animated animate__swing">
+            <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate__animated animate__swing">
               <Image
                 src="/img/logos/logo.png"
                 className="responsive-logo-flotex"
