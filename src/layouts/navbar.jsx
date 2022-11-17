@@ -35,7 +35,7 @@ const NavBarExample = () => {
       <Navbar
         expanded={expanded}
         expand="lg"
-        bg="white"
+        bg="light"
         className="menu-navbar-flotex"
       >
         <Container fluid>
@@ -136,7 +136,7 @@ const NavBarExample = () => {
                   </a>
                 </>
               ) : (
-                <a
+                <a href="/"
                   id="nav-a-flotex"
                   className={({ isActive }) =>
                     isActive ? "bg-nav-flotex" : normalLink
