@@ -1084,11 +1084,11 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: “Helvetica Neue”, sans-serif;
+  font-family: “Helvetica Neue”, serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
+  color: rgb(13, 13, 13);
+  background-color: white;
 }
 input,
 button,

@@ -88,6 +88,36 @@
     padding-top: 1.1875rem;
 
   }
+  /* gallery */
+  .contenedor-bg-flotex-gallery {
+    background-image: url(https://adar.com.br/wp-content/uploads/2020/01/Engage-Adar-Bom-Retiro-7630.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    height: 200px;
+    width: auto;
+  }
+  .showroom-text {
+    color: #7b7474;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  /*Contacto */
+  .contactImage{
+    width: 18.75rem;
+    height: 30.375rem;
+  }
+  .text-color-flotex{
+    color: #0F406F !important;
+    padding: 5px;
+    font-size: 15px;
+  }
+  .formularioContacto{
+    margin-top: 20px;
+      }
 }
 
 /*tablet y deskptop */
@@ -183,6 +213,38 @@
     display: block;
     padding-top: 1.1875rem;
     left: -38px;
+  }
+   /* gallery */
+   .contenedor-bg-flotex-gallery {
+    background-image: url(https://adar.com.br/wp-content/uploads/2020/01/Engage-Adar-Bom-Retiro-7630.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    height: 300px;
+    width: auto;
+  }
+  .showroom-text {
+    color: #7b7474;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+   /*Contacto */
+   .contactImage{
+    width: 16.875rem;
+    height: 34.375rem;
+  
+    margin-left: -50px;
+  }
+  .text-color-flotex{
+    color: #0F406F !important;
+    font-size: 20px;
+    margin: auto;
+  }
+  .formularioContacto{
+margin-top: 100px;
   }
 }
 
@@ -283,5 +345,36 @@
     position: relative;
     display: block;
     left: -38px;
+  }
+   /* gallery */
+   .contenedor-bg-flotex-gallery {
+    background-image: url(https://adar.com.br/wp-content/uploads/2020/01/Engage-Adar-Bom-Retiro-7630.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  
+    height: 400px;
+    width: auto;
+  }
+  .showroom-text {
+    color: #7b7474;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .contactImage{
+    width: 20.875rem;
+    height: 34.375rem;
+    
+  
+  }
+  .text-color-flotex{
+    color: #0F406F !important;
+    font-size: 20px;
+    margin: auto;
+  }
+  .formularioContacto{
+margin-top: 100px;
   }
 }

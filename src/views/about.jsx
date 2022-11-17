@@ -22,26 +22,22 @@ const About = () => {
         </Row>
       </Container>
 
-        <Container>
-    <Row>
-
-        <Col className="miEmpresa col-sm-12 col-md-4 col-lg-3.5 col-xl-4 col-xxl-5">
-          <h1 className="mision">MISIÓN</h1>
-          <p className="misionDato">
-            Desarrollar el mercado de la moda peruana. Convertirnos en socios
-            estratégicos de nuestros clientes. Generándoles valor agregado a
-            través de nuestra gran variedad y calidad de telas en el momento
-            oportuno.
-          </p>
-        </Col>
-        <Col className="col-sm-12 col-md-4 col-lg-6 col-xl-4">
-          <Image src="/img/flotexgreen/VP2.jpg" className="datosEmpresa" />
-        </Col>
-    </Row>
-
-
-
-        </Container>
+      <Container>
+        <Row>
+          <Col className="miEmpresa col-sm-12 col-md-4 col-lg-3.5 col-xl-4 col-xxl-5">
+            <h1 className="mision">MISIÓN</h1>
+            <p className="misionDato">
+              Desarrollar el mercado de la moda peruana. Convertirnos en socios
+              estratégicos de nuestros clientes. Generándoles valor agregado a
+              través de nuestra gran variedad y calidad de telas en el momento
+              oportuno.
+            </p>
+          </Col>
+          <Col className="col-sm-12 col-md-4 col-lg-6 col-xl-4">
+            <Image src="/img/flotexgreen/VP2.jpg" className="datosEmpresa" />
+          </Col>
+        </Row>
+      </Container>
       <Container className="p-5">
         <Row className="d-flex justify-content-center">
           <iframe
@@ -89,8 +85,8 @@ const About = () => {
       {""}
       <Container className=" bg-dark text-light fluid col-sm-12 col-md-8 col-md-10 ">
         <h3 className="m-2 text-center p-4 "> Nuestros Valores</h3>
-        <Row className="banner col-sm-12" >
-          <Col >
+        <Row className="banner col-sm-12">
+          <Col>
             <Image
               className="logoempresa"
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-41-1.svg"
@@ -116,8 +112,8 @@ const About = () => {
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-42.svg"
             />
             <p className="text-center p-3">
-              {" "} Más del 50% de nuestro equipo está conformado
-              por mujeres.
+              {" "}
+              Más del 50% de nuestro equipo está conformado por mujeres.
             </p>
           </Col>
         </Row>

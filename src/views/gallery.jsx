@@ -11,14 +11,11 @@ const Gallery = () => {
         <div className="contenedor-bg-flotex-gallery"></div>
         <div className="section-title">
           <h2>Gallery</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
-          </p>
+          <p>Galeria de imagenes de nuestro showroom</p>
         </div>
       </div>
       <div className="container">
-        <Row>
+        <Row > 
           <Col>
             <Row className="justify-content-md-center">
               <div
@@ -27,7 +24,6 @@ const Gallery = () => {
               >
                 <div>
                   <p className="showroom-text">SHOWROOMS</p>
-                  <h2>BUEN RETIRO</h2>
                   <p>
                     JR ANTONIO BAZO, 1070
                     <br />
@@ -50,7 +46,7 @@ const Gallery = () => {
                     </div>
                     <div>
                       <h2>En breve</h2>
-                      <p>Espera noticias.</p>
+                      <p>Espere noticias.</p>
                     </div>
                   </div>
                 </div>
