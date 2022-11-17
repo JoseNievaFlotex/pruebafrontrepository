@@ -83,7 +83,7 @@
   .datosEmpresa {
     width: 95vw;
     margin: auto;
-    padding: 0px 12px;
+    padding: 0px 5px 0px 0px;
     height: 15rem;
     padding-top: 1.1875rem;
 
@@ -175,12 +175,13 @@
     font-size: 0.9rem;
   }
   .datosEmpresa {
-    width: 31.875rem;
+    width: 34.875rem;
     height: 20rem;
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 20px;
     margin-top: 40px;
     position: relative;
     display: block;
+    padding-top: 1.1875rem;
     left: -38px;
   }
 }
