@@ -1,3 +1,4 @@
+import React from "react";
 import { Navigate, Route } from "react-router-dom";
 import { NotFoundComponent } from "../components/NotFoundComponent";
 import NavBarExample from "../layouts/navbar";
