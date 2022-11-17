@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Container, Nav, Row } from 'react-bootstrap'
 import { Link, Outlet, NavLink } from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Sidebar = ({children}) => {
 
@@ -9,7 +9,7 @@ const Sidebar = ({children}) => {
         {
             path:"/almacen/dashboard",
             name:"Dashboard",
-            icon: <FontAwesomeIcon icon='fas fa-eye' />,
+            // icon: <FontAwesomeIcon icon='fas fa-eye' />,
         },
         {
             path:"/almacen/analisis",
@@ -30,7 +30,7 @@ const Sidebar = ({children}) => {
             <div className='top_section'>
                 <h1>User</h1>  
                 <div className='barra'>
-                    <FontAwesomeIcon  />
+                    {/* <FontAwesomeIcon  /> */}
                 </div>
             </div>
             {menuItem.map((item, index) => (
