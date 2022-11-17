@@ -54,8 +54,7 @@ const Footer = () => {
               <div className="col-md-6">
                 <div className="contact-us">
                   <div className="contact-icon">
-                  <FontAwesomeIcon icon="fa-duotone fa-location-dot" />
-                 
+
                   </div>
 
                   <div className="contact-info">
