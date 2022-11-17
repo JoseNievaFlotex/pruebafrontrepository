@@ -164,10 +164,6 @@ const NavBarExample = () => {
         <Outlet></Outlet>
       </section>
 
-      {/* <ModalLogin
-        show={modalLoginShow}
-        onHide={() => setModalLoginShow(false)}
-      /> */}
 
       <Col>
         <FloatingWhatsApp
