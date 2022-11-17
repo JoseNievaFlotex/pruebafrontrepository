@@ -10,7 +10,7 @@ const Gallery = () => {
       <div className="container-fluid p-0">
         <div className="contenedor-bg-flotex-gallery"></div>
         <div className="section-title">
-          <h2>Gallery</h2>
+          <h2>Galeria</h2>
           <p>Galeria de imagenes de nuestro showroom</p>
         </div>
       </div>

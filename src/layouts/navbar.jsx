@@ -35,12 +35,12 @@ const NavBarExample = () => {
       <Navbar
         expanded={expanded}
         expand="lg"
-        bg="light"
+        bg="white"
         className="menu-navbar-flotex"
       >
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-12 col-md-4 col-lg-10 col-xl-4 col-xxl-4 animate__animated animate__swing">
+            <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate__animated animate__swing">
               <Image
                 src="/img/logos/logo.png"
                 className="responsive-logo-flotex"
@@ -53,7 +53,7 @@ const NavBarExample = () => {
           />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="m-auto my-2 my-lg-0"
+              className="m-auto my-2 my-lg-0  col-sm-2 col-md-4 col-lg-9 col-xl-2"
               style={{ maxHeight: "150px" }}
               navbarScroll
             >
@@ -116,7 +116,7 @@ const NavBarExample = () => {
             </Nav>
 
             <Nav
-              className="m-auto my-2 my-lg-0"
+              className="m-auto my-2 my-lg-0 col-sm-2 col-md-4 col-lg-6 col-xl-2"
               style={{ maxHeight: "120px" }}
               navbarScroll
             >
@@ -125,7 +125,7 @@ const NavBarExample = () => {
                   <p id="nav-a-flotex" className="text-uppercase">
                     {userExist}
                   </p>
-                  <a href="/"
+                  <p href="/"
                     id="nav-a-flotex"
                     className={({ isActive }) =>
                       isActive ? "bg-nav-flotex" : normalLink
@@ -133,7 +133,7 @@ const NavBarExample = () => {
                     onClick={cerrarSesion}
                   >
                     Cerrar Session
-                  </a>
+                  </p>
                 </>
               ) : (
                 <a
