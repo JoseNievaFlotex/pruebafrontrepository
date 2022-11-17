@@ -97,7 +97,7 @@
     background-attachment: fixed;
   
     height: 200px;
-    width: auto;
+    width: 100vw;
   }
   .showroom-text {
     color: #7b7474;
