@@ -25,7 +25,7 @@ const About = () => {
         <Container>
     <Row>
 
-        <Col className="miEmpresa col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <Col className="miEmpresa col-sm-12 col-md-4 col-lg-3.5 col-xl-4 col-xxl-5">
           <h1 className="mision">MISIÓN</h1>
           <p className="misionDato">
             Desarrollar el mercado de la moda peruana. Convertirnos en socios
@@ -34,7 +34,7 @@ const About = () => {
             oportuno.
           </p>
         </Col>
-        <Col className="col-sm-10 col-md-6 col-lg-6 col-xl-5">
+        <Col className="col-sm-12 col-md-4 col-lg-6 col-xl-4">
           <Image src="/img/flotexgreen/VP2.jpg" className="datosEmpresa" />
         </Col>
     </Row>
@@ -87,10 +87,10 @@ const About = () => {
         </Row>
       </Container>
       {""}
-      <Container className=" bg-dark text-light fluid col-sm-6 col-md-8 col-md-10 ">
+      <Container className=" bg-dark text-light fluid col-sm-12 col-md-8 col-md-10 ">
         <h3 className="m-2 text-center p-4 "> Nuestros Valores</h3>
-        <Row className="banner">
-          <Col>
+        <Row className="banner col-sm-12" >
+          <Col >
             <Image
               className="logoempresa"
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-41-1.svg"

@@ -176,11 +176,11 @@
     font-size: 0.9rem;
   }
   .datosEmpresa {
-    width: auto vw;
+    width: 31.875rem;
     height: 20rem;
-    padding-top: 1.1875rem;
-    padding: 10px 0px 50px 0px;
-    
+    padding-top: 2.1875rem;
+    padding: 10px 0px 0px 0px;
+    margin-top: 40px;
   }
 }
 
@@ -261,11 +261,10 @@
     color: white;
     display: flex;
     padding: 1.5625rem;
-    padding-left: 2.1875rem;
     align-items: flex-end;
     font-family: serif;
     font-style: normal;
-    font-size: 4.375rem;
+    font-size: 3.375rem;
   }
   .misionDato {
     color: white;
@@ -273,13 +272,19 @@
     padding: 1.25rem;
     padding-left: 1.875rem;
     padding-right: 2.5rem;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .datosEmpresa {
-    width: autovw;
-    height: 25rem;
-    padding-top: 1.1875rem;
-    float: left;
-    clear: left;
+    width: 45.875rem;
+    height: 20rem;
+    padding-top: 2.1875rem;
+    margin-top: 40px;
+    
   }
 }
+
+  /* .datosEmpresa {
+    width: 50.875rem;
+    height: 20rem;
+    padding-top: 2.1875rem;
+  } */
