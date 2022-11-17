@@ -24,17 +24,17 @@ const IntranetLogin = () => {
         <Image src="/img/intranet/intra2.jpg" className="imagen-intranet" />
 
         <Container className="intranet">
-          <Row className="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-            <Form onSubmit={formik.handleSubmit}>
+          <Row className="col-sm-6 col-md-6 col-lg-6 col-xl-4">
               <Image
                 src="/img/logos/logointranet.png "
                 className="logointranet"
               />
+            <Form onSubmit={formik.handleSubmit} className="formIntranet">
               <Form.Group className="mb-3 p-2" controlId="formBasicEmail">
                 <Form.Label className="text-white">Correo:</Form.Label>
                 <Form.Control
                   type="email"
-                  placeholder="Ejemplo@flotex.pe"
+                  placeholder="Ejemplo@intranet_flotex.pe"
                   name="email"
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}

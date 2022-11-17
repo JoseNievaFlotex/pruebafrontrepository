@@ -2,6 +2,7 @@ import React from "react";
 import Image from "react-bootstrap/Image";
 import Container from "react-bootstrap/Container";
 import { Button, Form, Row } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Footer = () => {
   return (
     <footer id="dk-footer" className="dk-footer">
@@ -53,7 +54,8 @@ const Footer = () => {
               <div className="col-md-6">
                 <div className="contact-us">
                   <div className="contact-icon">
-                    <i className="fa fa-map-o" aria-hidden="true"></i>
+                  <FontAwesomeIcon icon="fa-duotone fa-location-dot" />
+                 
                   </div>
 
                   <div className="contact-info">
@@ -88,7 +90,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-md-12 col-lg-6">
-                <div className="footer-widget">
+                <div className="footer-widget footer-left-widget">
                   <div className="section-heading">
                     <h3>Contáctanos</h3>
                     <span className="animate-border border-black"></span>

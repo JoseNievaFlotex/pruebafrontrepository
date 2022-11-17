@@ -131,11 +131,46 @@
   .formularioContacto{
     margin-top: 20px;
       }
-      /* logo intranet*/
-      .logointranet {
-        width: 100px;
-        height: 50px;
+      
+      /* footer */
+      .contact-flotex-responsive{
+        flex-direction: column;
       }
+      #iframe-flotex-responsive {
+        height: 1188px !important;
+      }
+      .img-flotex-galery:hover {
+        transform: none;
+      }
+      .video-responsive-flotex{
+        height: 240px !important;
+      }
+      .dk-footer-box-info{
+        position: initial;
+        padding: 24px 48px;
+        /* padding: 20px 50px; */
+      }
+      .dk-footer-box-info .footer-social-link h3{
+        font-size: 18px;
+        margin-bottom: 6px;
+    
+      }
+      .dk-footer .contact-us{
+        margin-bottom: 10px;
+        padding-left: 25px;
+        padding-top: 15px;
+      }
+      .contenedor-flotex-logo-contac{
+        max-width: 90% !important;
+      }
+      .footer-logo img{
+        width: 150px !important;
+      }
+      /* logo intranet */
+  .logointranet {
+    width: 250px;
+    height: 80px;
+  }
 }
 
 /*tablet y deskptop */
@@ -284,11 +319,49 @@
 margin-top: 100px;
   }
 
+ 
+ /* footer */
+ .contact-flotex-responsive{
+    flex-direction: column;
+  }
+  #iframe-flotex-responsive {
+    height: 1188px !important;
+  }
+  .img-flotex-galery:hover {
+    transform: none;
+  }
+  .video-responsive-flotex{
+    height: 240px !important;
+  }
+  .dk-footer-box-info{
+    position: initial;
+    padding: 24px 48px;
+    /* padding: 20px 50px; */
+  }
+  .dk-footer-box-info .footer-social-link h3{
+    font-size: 18px;
+    margin-bottom: 6px;
+
+  }
+  .dk-footer .contact-us{
+    margin-bottom: 10px;
+    padding-left: 25px;
+    padding-top: 15px;
+  }
+  .contenedor-flotex-logo-contac{
+    max-width: 90% !important;
+  }
+  .footer-logo img{
+    width: 150px !important;
+  }
+  .footer-left-widget {
+    padding-left: 80px;
+  }
   /* logo intranet */
   .logointranet {
-  width: 450px;
-  height: 100px;
-}
+    width: 250px;
+    height: 80px;
+  }
 }
 
 /* pantalla ancha*/
@@ -437,5 +510,13 @@ margin-top: 100px;
   }
   .formularioContacto{
 margin-top: 100px;
+  }
+  .footer-left-widget {
+    padding-left: 80px;
+  }
+/* logo intranet*/
+.logointranet {
+    width: 25rem;
+    height: 6.25rem;
   }
 }
