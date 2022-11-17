@@ -8,7 +8,7 @@ const About = () => {
   return (
     <>
       <Container>
-        <Row>
+        <Row className="p-2">
           <iframe
             className=""
             frameBorder="0"
@@ -21,6 +21,27 @@ const About = () => {
           ></iframe>
         </Row>
       </Container>
+
+        <Container>
+    <Row>
+
+        <Col className="miEmpresa col-sm-12 col-md-6 col-lg-6 col-xl-5">
+          <h1 className="mision">MISIÓN</h1>
+          <p className="misionDato">
+            Desarrollar el mercado de la moda peruana. Convertirnos en socios
+            estratégicos de nuestros clientes. Generándoles valor agregado a
+            través de nuestra gran variedad y calidad de telas en el momento
+            oportuno.
+          </p>
+        </Col>
+        <Col className="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+          <Image src="/img/flotexgreen/VP2.jpg" className="datosEmpresa" />
+        </Col>
+    </Row>
+
+
+
+        </Container>
       <Container className="p-5">
         <Row className="d-flex justify-content-center">
           <iframe

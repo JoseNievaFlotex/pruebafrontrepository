@@ -127,18 +127,18 @@
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
-.logoempresa {
+/* .logoempresa {
   display: block;
   margin: auto;
   width: 200px;
   height: 200px;
-}
-.banner {
+} */
+/* .banner {
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   padding: 50px 40px;
-}
+} */
 .lock {
   margin: auto;
   width: 20px;
@@ -1007,3 +1007,36 @@ p {
   padding: 50px;
   padding-left: 500px;
 }
+/* 
+.miEmpresa{
+  background-color: black;
+  position: relative;
+padding: 80px;
+}
+
+.mision{
+  color: white;
+  display: flex;
+  padding: 25px;
+  padding-left: 35px;
+  align-items: flex-end;
+  font-family: serif;
+  font-style: normal;
+  font-size: 70px;
+}
+.misionDato{
+  color: white;
+  display: flex;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 50px;
+  font-size: 1rem;
+}
+
+.datosEmpresa{
+  width: 700px;
+  height: 400px;
+  padding-top: 35px;
+  float: left;
+  clear: left;
+} */
