@@ -1010,6 +1010,8 @@ p {
 /* DashBoard Style */
 
 .bg-slider-flotex-dash{
+
+  transition: width 0.4s;
   background: #313a46;
   width: 260px;
   z-index: 10;
@@ -1022,18 +1024,36 @@ p {
   box-shadow: 0 0 35px 0 rgb(154 161 171 / 15%);
   box-shadow: 0px 0px 35px 0px rgb(154 161 171 / 15%);
 }
+.bg-slider-flotex-dash.active{
+
+  position: absolute;
+  width: 70px;
+  z-index: 5;
+  padding-top: 70px;
+  transition: width 0.5s;
+}
+.bg-slider-flotex-dash.active .nameDash{
+  display: none;
+  transition: width 0.5s;
+}
+
+
+.contenedor.bg-siderbar-flotex.active .content-page{
+  margin-left: 70px;
+  transition:  0.4s;
+}
 .content-page{
   margin-left: 260px;
   overflow: hidden;
   padding: 70px 0 65px;
   min-height: 100vh;
+  transition:  0.4s;
 }
 
 .link.active{
   color: white;
   font-size: .89rem;
   outline: none!important;
-
   text-decoration: none;
 }
 .link{
@@ -1070,3 +1090,4 @@ body[data-leftbar-theme=dark]{
   padding: 50px;
   padding-left: 500px;
 }
+

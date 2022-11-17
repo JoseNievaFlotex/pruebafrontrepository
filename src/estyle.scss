@@ -9,3 +9,51 @@ $colorbtn : #0F406F;
    background-color: $colorbtn;
 
 }
+
+/* level right */
+.contenedor-nav-dash-li{
+    position: relative;
+}
+.contenedor-nav-dash-li:hover{
+    background: #727cf5;
+    .level-left-menu{
+        
+        display: block;
+    }
+    .first-content-left{
+        background-color: #727cf5;
+        height: 68px;
+        align-items: center;
+        justify-content: center;
+    }
+    a{
+        height: 68px;
+    }
+}
+  .level-left-menu{
+    display: none;
+    position: absolute;
+    right: -260px;
+    top: 0px;
+    width: 260px;
+    height: 68px;
+  }
+  .level-left-menu:hover{
+    display: block;
+    background: #55449e;
+    position: absolute;
+    height: 168px;
+  }
+  
+  .content-nav-left{
+    display: flex;
+    flex-direction: column;
+    background-color: #313a46;
+    a{
+        text-decoration: none;
+        // text-align: center;
+        display: flex;
+        align-items: center;
+        color: azure;
+    }
+  }

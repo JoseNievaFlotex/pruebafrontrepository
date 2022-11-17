@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -8,17 +8,16 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-const NavBarCustom = () => {
+const NavBarCustom = ( {ToggleSidebar} ) => {
 
-    
 
   return (
     <>
         <div className='contenedor'>
-            <Navbar bg="white" expand="lg" className='container-fluid'>
+            <Navbar bg="white" expand="sm " className='container-fluid'>
                 <Container fluid>
-                    <Navbar.Brand href="#"><FontAwesomeIcon icon="fa-solid fa-bars" /></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
+                    <Navbar.Brand href="#" onClick={ToggleSidebar}><FontAwesomeIcon icon="fa-solid fa-bars" /></Navbar.Brand>
+                    {/* <Navbar.Toggle aria-controls="navbarScroll" /> */}
                     <Navbar.Collapse className='container-fluid justify-content-between' id="navbarScroll">
                         <Form className="d-flex">
                             <Form.Control
@@ -36,18 +35,18 @@ const NavBarCustom = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
+                            <NavDropdown title="Link" id="navbarScrollingDropdown">
+                                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                                <NavDropdown.Item href="#action4">
+                                    Another action
+                                </NavDropdown.Item>
+                                <NavDropdown.Divider />
+                                <NavDropdown.Item href="#action5">
+                                    Something else here
+                                </NavDropdown.Item>
+                            </NavDropdown>
                             <Nav.Link href="#action1">Home</Nav.Link>
                             <Nav.Link href="#action2">Usuario</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">
-                                Something else here
-                            </NavDropdown.Item>
-                            </NavDropdown>
                             <Nav.Link href="#action3" >
                                 <FontAwesomeIcon icon="fa-solid fa-gear" />
                             </Nav.Link>
