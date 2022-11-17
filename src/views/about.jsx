@@ -107,8 +107,7 @@ const About = () => {
             />
             <p className="text-center p-3">
               {" "}
-              Capacitamos a nuestro equipo y ayudamos a mejorar la calidad de la
-              atención para que tengan mayor valor comercial{" "}
+              Capacitamos a nuestro equipo y ayudamos a mejorar la calidad.
             </p>
           </Col>
           <Col>
@@ -117,8 +116,7 @@ const About = () => {
               src="https://paistextil.com/wp-content/uploads/2020/09/Grupo-42.svg"
             />
             <p className="text-center p-3">
-              {" "}
-              Empoderamos mujeres. Más del 50% de nuestro equipo está conformado
+              {" "} Más del 50% de nuestro equipo está conformado
               por mujeres.
             </p>
           </Col>
