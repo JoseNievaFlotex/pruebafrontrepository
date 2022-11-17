@@ -176,10 +176,10 @@
     font-size: 0.9rem;
   }
   .datosEmpresa {
-    width: autovw;
+    width: auto vw;
     height: 20rem;
-    position: relative;
     padding-top: 1.1875rem;
+    padding: 10px 0px 50px 0px;
     
   }
 }

@@ -34,7 +34,7 @@ const About = () => {
             oportuno.
           </p>
         </Col>
-        <Col className="col-sm-12 col-md-6 col-lg-6 col-xl-5">
+        <Col className="col-sm-10 col-md-6 col-lg-6 col-xl-5">
           <Image src="/img/flotexgreen/VP2.jpg" className="datosEmpresa" />
         </Col>
     </Row>
