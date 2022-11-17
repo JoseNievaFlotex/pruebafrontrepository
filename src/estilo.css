@@ -1,6 +1,6 @@
 
 *{
-  font-family: "Serif";
+  font-family: "Calibri";
 }
 .carousel-caption {
   position: absolute;
@@ -10,7 +10,12 @@
   z-index: 10;
   text-align: center;
 }
+.galleria {
+  display: flex;
+  justify-content: center;
 
+  padding: 5px;
+}
 
 .efecto {
   transition: 0.5s;
@@ -21,6 +26,15 @@
 }
 .efecto:hover {
   transform: scale(1.2);
+}
+.tejido {
+  display: flex;
+  margin: 20px;
+  padding: 60px;
+  justify-content: flex-start;
+  font-size: 40px;
+  align-items: center;
+  text-align: center;
 }
 
 .carousel-caption .overlay {
@@ -113,6 +127,18 @@
 .navbar-default .navbar-toggle:hover > .icon-bar {
   background-color: #608dfd;
 }
+/* .logoempresa {
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+} */
+/* .banner {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 40px;
+} */
 .lock {
   margin: auto;
   width: 20px;
@@ -129,6 +155,17 @@
 position: absolute;
 top: 40%;
 left: 40%;
+}
+
+.logointranet {
+  width: 450px;
+  height: 100px;
+}
+@media (min-width: 300) {
+  .logointranet {
+    width: 100px;
+    height: 50px;
+  }
 }
 
 
@@ -544,11 +581,9 @@ p {
 
 #nav-a-flotex {
   position: relative;
-  color: #0F406F;
-  font-size: 17px;
+  color: rgba(0, 0, 0, 0.55);
   display: block;
-  padding: 11px ;
-  text-overflow: clip;
+  padding: 11px 1.5rem;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out;
@@ -557,7 +592,6 @@ p {
 .bg-nav-flotex {
   background-color: transparent;
   color: black;
-
 }
 .bg-nav-flotex::after {
   content: " ";
@@ -577,8 +611,6 @@ p {
 }
 /** Probando efectos**/
 .menu-navbar-flotex a::before {
-
-  background-color: white;
   content: "";
   position: absolute;
   bottom: 0;
@@ -612,47 +644,96 @@ p {
 }
  /* */
 
-/* .carousel-indicators {
-  visibility: hidden !important;
+/*telas universe */
+.telasuniverse{
+  height: 24rem;
 }
-@media (max-width: 600px) {
-  .contact-flotex-responsive{
+@media only screen and (max-width: 37.5rem) {
+  .telasuniverse{
+    height: 12rem;
+  }
+}
+@media only screen and (max-width: 62rem) {
+  .telasuniverse{
+    height: 19rem;
+  }
+}
+
+/* carrusel */
+
+/* cottom */
+@media (max-width: 500px) {
+  .cotton-text-flex{
+
+
+  }
+
+  .img-cotton-responsive{
+    height: 18.75rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .cotton-text-flex{
+    display: flex;
     flex-direction: column;
+    align-items: flex-end;
   }
-  #iframe-flotex-responsive {
-    height: 1188px !important;
+  .cotton-text-flex p{
+    font-size: .3125rem;
+    word-spacing: 4px;
+    color: #0F406F;
+    margin: 3px;
+    padding: 5px;
   }
-  .img-flotex-galery:hover {
-    transform: none;
+  .img-cotton-responsive{
+    height: 25rem !important;
   }
-  .video-responsive-flotex{
-    height: 240px !important;
-  }
-  .dk-footer-box-info{
-    position: initial;
-    padding: 24px 48px;
-    /* padding: 20px 50px; */
-  /* }
-  .dk-footer-box-info .footer-social-link h3{
-    font-size: 18px;
-    margin-bottom: 6px;
+}
 
+@media landscape {
+  
+  
+  .cotton-text-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+   
   }
-  .dk-footer .contact-us{
-    margin-bottom: 10px;
-    padding-left: 25px;
-    padding-top: 15px;
+  
+  .cotton-text-flex p{
+    font-size: 10px;
+    word-spacing: 4px;
+    color: #0F406F;
+    margin: 10px;
+    padding: 10px;
+    white-space: pre-line;
+    /* text-shadow: 2px 1px 5px; */
   }
-  .contenedor-flotex-logo-contac{
-    max-width: 90% !important;
+  .img-cotton-responsive{
+    height: 21rem !important;
   }
-  .footer-logo img{
-    width: 150px !important;
-  } */
-  /* */
+}
 
-/* } */ */
+.cotton-text-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+ 
+}
 
+.cotton-text-flex p{
+  max-width: 315px;
+  font-size: 25px;
+  word-spacing: 4px;
+  color: #0F406F;
+  margin: 10px;
+  padding: 20px;
+  white-space: pre-line;
+  /* text-shadow: 2px 1px 5px; */
+}
+.img-cotton-responsive{
+  height: 30rem !important;
+}
 
 /*VIDEO*/
 
@@ -664,12 +745,29 @@ p {
   background-size: cover;
 }
 
+.publicidad {
+  height: 800px;
+  clip-path: inset(10px 20px 200px 10px);
+  display: flex;
+}
+
+.public {
+  position: absolute;
+  padding: 80px;
+  height: 600px;
+}
+.letter{
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
  /* prueba en video nosotros */
 @media (min-width:320px) {
-
+  
 
 .elementor{
-
+ 
   position: relative;
   height: 23.5vh;
   width: 100%;
@@ -677,7 +775,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 
@@ -704,7 +802,7 @@ p {
 }
 @media (min-width:768px)
 {.elementor{
-
+ 
   position: relative;
   height: 31.7vh;
   width: 100%;
@@ -712,7 +810,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 
@@ -740,7 +838,7 @@ p {
 
 @media (orientation:landscape)
 {.elementor{
-
+ 
   position: relative;
   height: 55.2vh;
   width: 100%;
@@ -748,7 +846,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
 }
 
 
@@ -775,18 +873,37 @@ p {
 }
 
 /* logo */
-
+@media (max-width:775px) {
+  
+  .responsive-logo-flotex
+  {
+    height: 40px;
+  }
+  
+}
 /* */
 
 
 .color-btn-flotex{
   background-color: #0F406F;
 }
+/* */ 
+
+
+.pruebadeface{
+  height: 42.5rem;
+  width: 38.75rem;
+  border-radius: 7px;
+  box-shadow: 1px 2px 8px -1px;
+  padding: 0 !important;
+  
+}
 /* */
+/* .text-color-flotex{
+  color: #0F406F !important;
+} */
 
-
-
-
+/* Dashboard */
 
 .contenedor{
   display: flex;
@@ -806,3 +923,45 @@ p {
   align-items: center;
 }
 
+
+/* */
+
+.pruebacard
+{
+  display: flex;
+  padding: 50px;
+  padding-left: 500px;
+}
+/* 
+.miEmpresa{
+  background-color: black;
+  position: relative;
+padding: 80px;
+}
+
+.mision{
+  color: white;
+  display: flex;
+  padding: 25px;
+  padding-left: 35px;
+  align-items: flex-end;
+  font-family: serif;
+  font-style: normal;
+  font-size: 70px;
+}
+.misionDato{
+  color: white;
+  display: flex;
+  padding: 25px;
+  padding-left: 35px;
+  padding-right: 50px;
+  font-size: 1rem;
+}
+
+.datosEmpresa{
+  width: 700px;
+  height: 400px;
+  padding-top: 35px;
+  float: left;
+  clear: left;
+} */

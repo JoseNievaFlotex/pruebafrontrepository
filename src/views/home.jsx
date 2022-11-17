@@ -45,14 +45,14 @@ const Home = () => {
           <Row className="col-sm-12 col-md-10 col-lg-8 col-xl-8">
             <Image src="/img/flotexgreen/VP1.jpg" className="telasuniverse" />
           </Row>
-          <Col className=" col-md-2 col-lg-4 col-xl-4">
-            <h3 className="tejido ">TU UNIVERSO EN TELAS</h3>
+          <Col className=" col-md-2 col-lg-2 col-xl-2">
+            <h3 className="tejido text-color-flotex">TU UNIVERSO EN TELAS</h3>
           </Col>
         </Row>
       </Container>
       <Container className="d-flex justify-content-center  ">
         <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 justify-content-center">
-          <Col className=" cotton-text-flex mt-">
+          <Col className=" cotton-text-flex">
             <p className="animate__animated animate__backInLeft animate__delay-3s">
               Tela de alta Calidad, el bordado le añade textura a la superficie.
             </p>

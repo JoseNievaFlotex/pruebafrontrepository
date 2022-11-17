@@ -35,12 +35,12 @@ const NavBarExample = () => {
       <Navbar
         expanded={expanded}
         expand="lg"
-        bg="white"
+        bg="light"
         className="menu-navbar-flotex"
       >
         <Container fluid>
           <Navbar.Brand as={Link} to="/">
-            <Row className="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 animate__animated animate__swing">
+            <Row className="col-sm-12 col-md-4 col-lg-10 col-xl-4 col-xxl-4 animate__animated animate__swing">
               <Image
                 src="/img/logos/logo.png"
                 className="responsive-logo-flotex"
@@ -125,7 +125,7 @@ const NavBarExample = () => {
                   <p id="nav-a-flotex" className="text-uppercase">
                     {userExist}
                   </p>
-                  <p href="/"
+                  <a href="/"
                     id="nav-a-flotex"
                     className={({ isActive }) =>
                       isActive ? "bg-nav-flotex" : normalLink
@@ -133,7 +133,7 @@ const NavBarExample = () => {
                     onClick={cerrarSesion}
                   >
                     Cerrar Session
-                  </p>
+                  </a>
                 </>
               ) : (
                 <a
