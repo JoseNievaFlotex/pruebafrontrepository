@@ -13,7 +13,7 @@ const NavBarCustom = ( {ToggleSidebar} ) => {
 
   return (
     <>
-        <div className='contenedor'>
+        <div className='contenedor content-navbarcustom-fixed'>
             <Navbar bg="white" expand="sm " className='container-fluid'>
                 <Container fluid>
                     <Navbar.Brand href="#" onClick={ToggleSidebar}><FontAwesomeIcon icon="fa-solid fa-bars" /></Navbar.Brand>

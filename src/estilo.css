@@ -1031,6 +1031,8 @@ p {
   z-index: 5;
   padding-top: 70px;
   transition: width 0.5s;
+  /*DEMO/*/
+  height: 100%;
 }
 .bg-slider-flotex-dash.active .nameDash{
   display: none;
@@ -1062,14 +1064,14 @@ p {
   outline: none!important;
 
   text-decoration: none;
-  padding: 12px 30px;
+  padding: 12px 25px;
 }
 
 body[data-leftbar-theme=dark]{
   --ct-dark-menu-item-hover: #fa5c7c;
 }
 .link:hover{
-  color: #fa5c7c;
+  color: #ffffff;
 }
 
 .bg-siderbar-flotex{
